@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">正在打开WLAN...</string>
+    <string name="party_share_strings_join_err_wifi_txt">无法连接到WLAN</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN已断开连接。正在重新连接...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN已连接</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">无法连接到WLAN</string>
+    <string name="party_share_strings_wifi_failure_end_txt">无法连接WLAN。聚会已经结束。</string>
+    <string name="party_share_strings_wifi_off_err_txt">无法打开WLAN</string>
+</resources>

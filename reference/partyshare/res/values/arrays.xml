@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+    <!-- Session list resource IDs -->
+    <array name="sessionListResourceIds">
+        <item>@drawable/session_item_01</item>
+        <item>@drawable/session_item_02</item>
+        <item>@drawable/session_item_03</item>
+        <item>@drawable/session_item_04</item>
+        <item>@drawable/session_item_05</item>
+        <item>@drawable/session_item_06</item>
+        <item>@drawable/session_item_07</item>
+        <item>@drawable/session_item_08</item>
+        <item>@drawable/session_item_09</item>
+        <item>@drawable/session_item_10</item>
+    </array>
+
+    <!-- Album art resource IDs -->
+    <array name="albumArtResourceIds">
+        <item>@drawable/party_share_music_list_jacket_0001_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0002_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0003_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0004_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0005_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0006_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0007_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0008_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0009_icn</item>
+        <item>@drawable/party_share_music_list_jacket_0010_icn</item>
+    </array>
+
+    <!-- Device name string -->
+    <string-array name="excludeList" translatable="false">
+        <item>SOL25</item>
+        <item>D6503</item>
+        <item>D6563</item>
+        <item>SO-03F</item>
+        <item>L50u</item>
+        <item>D6502</item>
+        <item>L50w</item>
+        <item>D6543</item>
+        <item>SOT21</item>
+        <item>SGP521</item>
+        <item>SO-05F</item>
+        <item>SGP541</item>
+        <item>SGP551</item>
+        <item>SGP511</item>
+        <item>SGP512</item>
+        <item>SGP561</item>
+        <item>L50t</item>
+    </string-array>
+</resources>

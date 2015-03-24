@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+    <color name="action_bar_color">#66000000</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+
+    <color name="main_focus_text_color">#FFE464E4</color>
+    <color name="sub_focus_text_color">#CFE464E4</color>
+
+    <color name="main_text_color">#FFFFFFFF</color>
+    <color name="sub_text_color">#80FFFFFF</color>
+
+    <color name="tab_text_selected">#FFFFFFFF</color>
+    <color name="tab_text_unselected">#80FFFFFF</color>
+
+    <color name="divider_color">#FF000000</color>
+
+    <color name="playview_host_name_text_color">#80E464E4</color>
+</resources>

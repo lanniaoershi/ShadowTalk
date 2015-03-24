@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Avatud lähtekoodi litsentsid</string>
+    <string name="title_disclaimer">Kasutusteave</string>
+    <string name="label_accept">Nõustu</string>
+    <string name="label_agree">Nõustu</string>
+    <string name="label_decline">Keeldu</string>
+    <string name="label_disagree">Keeldu</string>
+    <string name="label_terms_and_conditions">Tingimused</string>
+    <string name="disclaimer_data_charges">Selle teenuse kasutamisele võivad mobiiltelefoniga seotud teenusepakkujaga sõlmitud lepingust sõltuvalt kehtida andmesidetariifid.</string>
+    <string name="disclaimer_terms">Rakenduse kasutamisel kehtivad &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;kasutustingimused&lt;/a&gt;.</string>
+    <string name="disclaimer_terms_consent">Nõustun Sony Mobile\'i &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;kasutustingimustega&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Nõustun Sony Mobile\'i &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;kasutustingimuste&lt;/a&gt; ja &lt;a href=http://www.sonymobile.com/privacy&gt;privaatsuspoliitikaga&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Nõustun Sony Mobile\'i &lt;a href=http://www.sonymobile.com/privacy&gt;privaatsuspoliitikaga&lt;/a&gt;</string>
+</resources>

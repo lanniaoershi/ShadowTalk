@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.sonymobile.partyshare"
+        android:versionCode="010000"
+        android:versionName="01.00.00">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <!-- Google Play filtering -->
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+
+    <application
+        android:name="com.sonymobile.partyshare.PartyShareApplication"
+        android:icon="@drawable/party_share_app_icn"
+        android:label="@string/party_share_strings_app_name_txt"
+        android:theme="@style/Theme.PartyShare"
+        android:allowBackup="false">
+        <activity
+            android:name="com.sonymobile.partyshare.ui.PartyShareActivity"
+            android:theme="@style/Theme.PartyShare.Main"
+            android:launchMode="singleTask"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+        <activity
+            android:name="com.sonymobile.partyshare.ui.SetupPartyActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+        <activity
+            android:name="com.sonymobile.partyshare.ui.PartyListActivity"
+            android:theme="@style/Theme.PartyShare.PartyList"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+        <activity
+            android:name="com.sonymobile.partyshare.ui.StartupActivity"
+            android:theme="@style/Theme.PartyShare.Startup"
+            android:launchMode="singleTask"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.NfcEntry"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.sonymobile.partyshare" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.HelpActivity"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.PaginatedHelpActivity"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.LegalDisclaimerActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.WarningActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection">
+        </activity>
+
+        <activity
+            android:name="com.sonymobile.partyshare.ui.LegalActivity"
+            android:configChanges="mcc|mnc|touchscreen|smallestScreenSize|locale|keyboard|navigation|screenLayout|keyboardHidden|orientation|fontScale|uiMode|screenSize|layoutDirection"
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+
+        <service android:name="com.sonymobile.partyshare.service.PartyShareService" android:exported="false" />
+
+        <provider
+            android:name="com.sonymobile.partyshare.provider.MusicProvider"
+            android:authorities="com.sonymobile.partyshare.music"
+            android:exported="false" >
+        </provider>
+
+        <provider
+            android:name="com.sonymobile.partyshare.provider.PhotoProvider"
+            android:authorities="com.sonymobile.partyshare.photo"
+            android:exported="false" >
+        </provider>
+
+        <service android:exported="false" android:name="com.sonymobile.partyshare.service.MusicService">
+            <intent-filter>
+                <action android:name="com.sonymobile.partyshare.action.TOGGLE_PLAYBACK" />
+                <action android:name="com.sonymobile.partyshare.action.PLAY" />
+                <action android:name="com.sonymobile.partyshare.action.PAUSE" />
+                <action android:name="com.sonymobile.partyshare.action.SKIP" />
+                <action android:name="com.sonymobile.partyshare.action.REWIND" />
+                <action android:name="com.sonymobile.partyshare.action.STOP" />
+                <action android:name="com.sonymobile.partyshare.action.ITEM_CLICK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sonymobile.partyshare.action.URL" />
+                <data android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name=".service.IMusicService"></action>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.sonymobile.partyshare.service.PhotoDownloadService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.sonymobile.partyshare.action.START_AUTO_DL" />
+                <action android:name="com.sonymobile.partyshare.action.STOP_AUTO_DL" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

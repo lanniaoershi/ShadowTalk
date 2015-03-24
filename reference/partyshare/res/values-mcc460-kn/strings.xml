@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">WLAN ಆನ್ ಆಗುತ್ತಿದೆ…</string>
+    <string name="party_share_strings_join_err_wifi_txt">WLANಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN ಸಂಪರ್ಕಕಡಿತಗೊಂಡಿದೆ. ಮರುಸಂಪರ್ಕಿಸುತ್ತಿದೆ...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN ಸಂಪರ್ಕಿಸಿದೆ</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">WLANಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ</string>
+    <string name="party_share_strings_wifi_failure_end_txt">WLAN ಗೆ ಸಂಪರ್ಕಿಸಲಾಗಲಿಲ್ಲ. ಪಾರ್ಟಿ ಕೊನೆಗೊಂಡಿದೆ.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN ಆನ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ</string>
+</resources>

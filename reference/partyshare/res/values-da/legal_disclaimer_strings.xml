@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Open source-licenser</string>
+    <string name="title_disclaimer">Brugsoplysninger</string>
+    <string name="label_accept">Acceptér</string>
+    <string name="label_agree">Jeg accepterer</string>
+    <string name="label_decline">Jeg accepterer ikke</string>
+    <string name="label_disagree">Afvis</string>
+    <string name="label_terms_and_conditions">Vilkår og betingelser</string>
+    <string name="disclaimer_data_charges">\"Brug af denne tjeneste kan være underlagt gebyrer for datatrafik, afhængigt at dit mobiltelefonabonnement med din tjenesteudbyder.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Betingelser for brug&lt;/a&gt; gælder for din brug af programmet.</string>
+    <string name="disclaimer_terms_consent">Jeg accepterer Sony Mobiles &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Betingelser for brug&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Jeg accepterer Sony Mobiles &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Betingelser for brug&lt;/a&gt; og &lt;a href=http://www.sonymobile.com/privacy&gt;Politik for beskyttelse af personlige oplysninger&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Jeg accepterer Sony Mobiles &lt;a href=http://www.sonymobile.com/privacy&gt;Politik for beskyttelse af personlige oplysninger&lt;/a&gt;</string>
+</resources>

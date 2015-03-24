@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">オープンソースライセンス</string>
+    <string name="title_disclaimer">使用情報</string>
+    <string name="label_accept">同意</string>
+    <string name="label_agree">同意する</string>
+    <string name="label_decline">拒否</string>
+    <string name="label_disagree">同意しない</string>
+    <string name="label_terms_and_conditions">利用規約</string>
+    <string name="disclaimer_data_charges">このサービスを利用すると、通信事業者とのご契約のデータプランによってはデータ通信料が発生する場合があります。</string>
+    <string name="disclaimer_terms">アプリケーションの利用には&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用条件&lt;/a&gt;が適用されます。</string>
+    <string name="disclaimer_terms_consent">Sony Mobile&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用条件&lt;/a&gt;に同意します</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sony Mobile&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用条件&lt;/a&gt;および&lt;a href=http://www.sonymobile.com/privacy&gt;プライバシーポリシー&lt;/a&gt;に同意します</string>
+    <string name="disclaimer_privacy_consent">Sony Mobile&lt;a href=http://www.sonymobile.com/privacy&gt;プライバシーポリシー&lt;/a&gt;に同意します</string>
+</resources>

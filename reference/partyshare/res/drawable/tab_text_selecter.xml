@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused states -->
+    <item android:state_selected="false" android:color="@color/tab_text_unselected" />
+    <item android:state_selected="true"  android:color="@color/tab_text_selected" />
+</selector>

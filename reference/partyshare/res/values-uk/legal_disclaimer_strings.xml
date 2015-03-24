@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Ліцензії відкритого ПЗ</string>
+    <string name="title_disclaimer">Інформація про використання</string>
+    <string name="label_accept">Прийняти</string>
+    <string name="label_agree">Погоджуюся</string>
+    <string name="label_decline">Відхилити</string>
+    <string name="label_disagree">Не погоджуюся</string>
+    <string name="label_terms_and_conditions">Положення та умови</string>
+    <string name="disclaimer_data_charges">За користування цієї послугою може стягуватися плата за передавання даних залежно від умов передплати послуг мобільного зв’язку вашого оператора мережі.</string>
+    <string name="disclaimer_terms">Ці &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Умови використання&lt;/a&gt; поширюються на ваше використання цієї програми.</string>
+    <string name="disclaimer_terms_consent">Я погоджуюся з &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Умовами використання&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Я погоджуюся з &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Умовами використання&lt;/a&gt; та &lt;a href=http://www.sonymobile.com/privacy&gt;Політикою конфіденційності&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Я погоджуюся з &lt;a href=http://www.sonymobile.com/privacy&gt;Політикою конфіденційності&lt;/a&gt; Sony Mobile</string>
+</resources>

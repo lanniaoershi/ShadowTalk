@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">Aktiverer WLAN...</string>
+    <string name="party_share_strings_join_err_wifi_txt">Kunne ikke oprette forbindelse til WLAN</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">Forbindelsen til WLAN er afbrudt. Opretter forbindelse igen...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN er forbundet</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">Kunne ikke oprette forbindelse til WLAN</string>
+    <string name="party_share_strings_wifi_failure_end_txt">Der kunne ikke oprettes forbindelse til WLAN. Festen er slut.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN kan ikke slås til</string>
+</resources>

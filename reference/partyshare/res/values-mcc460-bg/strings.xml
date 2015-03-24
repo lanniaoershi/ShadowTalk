@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">Включване на WLAN</string>
+    <string name="party_share_strings_join_err_wifi_txt">Свързването с WLAN мрежа е неуспешно</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN връзката прекъсната. Повторно свързване...</string>
+    <string name="party_share_strings_wifi_success_txt">Свързано е с WLAN мрежа</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">Свързването с WLAN мрежа е неуспешно</string>
+    <string name="party_share_strings_wifi_failure_end_txt">Неуспешно свързване с WLAN мрежа. Партито е приключило.</string>
+    <string name="party_share_strings_wifi_off_err_txt">Неуспешно включване на WLAN</string>
+</resources>

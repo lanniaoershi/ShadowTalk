@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Άδειες λογισμικού ανοικτού κώδικα</string>
+    <string name="title_disclaimer">Πληροφορίες χρήσης</string>
+    <string name="label_accept">Αποδοχή</string>
+    <string name="label_agree">Συμφωνώ</string>
+    <string name="label_decline">Απόρριψη</string>
+    <string name="label_disagree">Διαφωνώ</string>
+    <string name="label_terms_and_conditions">Όροι και προϋποθέσεις</string>
+    <string name="disclaimer_data_charges">Η χρήση αυτής της υπηρεσίας ενδέχεται να υπόκειται σε χρεώσεις κίνησης δεδομένων ανάλογα με τη συνδρομή στην εταιρεία κινητής τηλεφωνίας που έχετε στο κινητό σας τηλέφωνο.</string>
+    <string name="disclaimer_terms">Οι &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Όροι χρήσης&lt;/a&gt; ισχύουν για την από μέρους σας χρήση της εφαρμογής.</string>
+    <string name="disclaimer_terms_consent">Συμφωνώ με τους &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Όρους χρήσης&lt;/a&gt; της Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Συμφωνώ με τους &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Όρους χρήσης&lt;/a&gt; και την &lt;a href=http://www.sonymobile.com/privacy&gt;Πολιτική απορρήτου&lt;/a&gt; της Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Συμφωνώ με την &lt;a href=http://www.sonymobile.com/privacy&gt;Πολιτική απορρήτου&lt;/a&gt; της Sony Mobile</string>
+</resources>

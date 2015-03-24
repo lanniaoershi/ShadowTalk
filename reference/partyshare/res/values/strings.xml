@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Application name. This app enables real-time photo/music sharing. By creating a virtual party room on the Xperia™, you can share photos and music only with people invited to the party. Participants can stream music to a compatible speaker through this app and turn anywhere into a party room. -->
+<string name="party_share_strings_app_name_txt" xliff:restype="x-UNLIMITED">PartyShare</string>
+<!-- Description about the app "party_share_strings_app_name_txt" on the main screen. -->
+<string name="party_share_strings_place_holder_content_txt" xliff:restype="x-UNLIMITED">Turn your Xperia™ into a jukebox. Broadcast your party with real-time photo streaming.\nThis is a perfect app to have when you throw a party or go for a drive with friends.\nWith PartyShare, you can create a shared playlist with your friends and stream songs from your Xperia™ to a speaker. You can also upload photos effortlessly in real time.\nInstall PartyShare now and warm up your party!</string>
+<!-- Text on the button to download. -->
+<string name="party_share_strings_download_button_txt" xliff:restype="x-GENERIC/POPUP/LIST/V">Download</string>
+<!-- Error message that appears when users try to download an app from Google Play Store. -->
+<string name="party_share_strings_err_connect_network_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Connect to network.</string>
+<!-- Error message that appears when users try to download an app from Google Play Store. -->
+<string name="party_share_strings_err_not_installed_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Google Play Store is not installed or disabled.</string>
+<!-- Error message that appears when users try to download an app from Google Play Store. -->
+<string name="party_share_strings_err_coming_soon_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Coming soon. Please try again later.</string>
+<!-- Text in the error dialog that appears when a guest user tried to use the application. -->
+<string name="party_share_strings_err_multiuser_not_owner_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">This application is only available to the owner of this device.</string>
+<!-- String to display in voicemail number summary when no voicemail num is set -->
+<string name="party_share_strings_startup_not_set_txt" xliff:restype="x-GENERIC/POPUP/TEXTFIELD/V">&lt;not set&gt;</string>
+<!-- Introductory text on the main screen of the application "PartyShare". -->
+<string name="party_share_strings_startup_content_txt" xliff:restype="x-UNLIMITED">Share your music and photos with everyone at a party in real time</string>
+<!-- Text on the button to share the app. -->
+<string name="party_share_strings_share_app_button_txt" xliff:restype="x-PARTYSHARE/BUTTON/SHAREAPP">Share app</string>
+<!-- Text on the button to host a party. -->
+<string name="party_share_strings_new_party_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">Host a party</string>
+<!-- Alert dialog that appears when users try to join a party that does not require a password. -->
+<string name="party_share_strings_join_party_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">This party is open to anyone on the same network. All partygoers will be able to see anything you share at the party.</string>
+<!-- Text on the button to join a party. -->
+<string name="party_share_strings_join_dialog_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Join party</string>
+<!-- One of the items in the Options menu. Turning this on will automatically download updates. -->
+<string name="party_share_strings_option_menu_download_setting_txt" xliff:restype="x-GENERIC/ICS/OPTION">Automatic downloads</string>
+<!-- One of the items in the Options menu. Tapping this will show the setting dialog where users can choose the sorting rule. -->
+<string name="party_share_strings_option_menu_sort_photos_txt" xliff:restype="x-GENERIC/ICS/OPTION">Sort photos</string>
+<!-- One of the items under the Settings. Settings related to sound/audio are available from this menu. -->
+<string name="party_share_strings_option_menu_sound_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/LARGE">Sound</string>
+<!-- Informing the user about a legal text. The item is shown in the options/overflow menu. -->
+<string name="party_share_strings_option_menu_legal_txt" xliff:restype="x-GENERIC/ICS/OPTION">Legal</string>
+<!-- One of the items in the Options menu. Tapping this will show the setting dialog where users can adjust the volume of music played in the party. -->
+<string name="party_share_strings_option_menu_music_volume_txt" xliff:restype="x-GENERIC/ICS/OPTION">Music volume</string>
+<!-- Text above the text input field where users can set the name used in the app. -->
+<string name="party_share_strings_change_your_name_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Enter your desired display name</string>
+<!-- Text above the text field for the party's name. -->
+<string name="party_share_strings_setup_party_name_txt" xliff:restype="x-PARTYSHARE/TITLE/PARTYNAME">Party name</string>
+<!-- String to display in voicemail number summary when no voicemail num is set -->
+<string name="party_share_strings_setup_not_set_txt" xliff:restype="x-GENERIC/POPUP/TEXTFIELD/V">&lt;not set&gt;</string>
+<!-- Text above the user's name. -->
+<string name="party_share_strings_setup_my_name_txt" xliff:restype="x-PARTYSHARE/TITLE/DISPNAME">My name</string>
+<!-- Checkbox text that appears on the party setup screen. Check the box to set a password that is required to join the party. -->
+<string name="party_share_strings_setup_require_password_txt" xliff:restype="x-PARTYSHARE/CHECKBOX/PASSWORD">Require password to join</string>
+<!-- Alert dialog that appears when the host of the party chose not to set a password for the party. -->
+<string name="party_share_strings_no_password_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">No password set. This will allow anyone on the same network to join the party.</string>
+<!-- Text on the button to allow anyone to join the party. This button is used on the dialog "party_share_strings_no_password_dialog_txt". -->
+<string name="party_share_strings_allow_anyone_to_join_dialog_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Allow anyone to join</string>
+<!-- Text of the password preference. [CHAR LIMIT=NONE] -->
+<string name="party_share_strings_member_list_password_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/LARGE">Password</string>
+<!-- Status text that appears below a name. This text is used under the user's name when the user is the host of the party. -->
+<string name="party_share_strings_member_list_me_host_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">Me (Host)</string>
+<!-- Text on the button to invite someone to the party. -->
+<string name="party_share_strings_member_list_lnvite_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/LARGE">Invite to party</string>
+<!-- Message that appears on the list of partygoers. This text shows when no one hasn't joined the party that the user hosted. -->
+<string name="party_share_strings_member_list_no_guests_txt" xliff:restype="x-UNLIMITED">No one has joined yet</string>
+<!-- Text on the button to end the party. -->
+<string name="party_share_strings_member_list_end_party_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">End party</string>
+<!-- Text on the button to remove a person from the party. -->
+<string name="party_share_strings_popup_menu_person_remove_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Remove</string>
+<!-- Text above the text field for password. -->
+<string name="party_share_strings_enter_password_txt" xliff:restype="x-UNLIMITED">Enter password</string>
+<!-- Text on the button to leave the party. -->
+<string name="party_share_strings_leave_party_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">Leave party</string>
+<!-- Text that appears below a name. This text is used to identify which one the user is in the list. -->
+<string name="party_share_strings_member_list_me_guest_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">Me</string>
+<!-- Status text that appears below a name. This is used for the host of the party. -->
+<string name="party_share_strings_member_list_host_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">Host</string>
+<!-- Text on the confirmation dialog before removing a specific person from the party. %s will be replaced with the name of the person to be removed. -->
+<string name="party_share_strings_remove_member_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Remove %s from the party?</string>
+<!-- Text on the button that appears by touching and holding the name of a person in the guest list. Tap this to kick the guest out of the party. -->
+<string name="party_share_strings_remove_dialog_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Remove</string>
+<!-- Toast that appears when the user has been kicked out of the party. %s will be replaced with the name of the party. -->
+<string name="party_share_strings_remove_toast_txt" xliff:restype="x-GENERIC/TOAST/TEXT">You have been removed from %s.</string>
+<!-- Text on the confirmation dialog that appears before leaving a party. -->
+<string name="party_share_strings_leave_party_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Would you like to leave the party?</string>
+<!-- Text on the button to leave a party. -->
+<string name="party_share_strings_leave_party_dialog_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Leave</string>
+<!-- Text on the confirmation dialog that appears before ending a party. -->
+<string name="party_share_strings_end_party_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Would like to end the party?</string>
+<!-- Text on the button to end the party. -->
+<string name="party_share_strings_end_party_dialog_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">End party</string>
+<!-- Toast that appears when users tried to join a party that is over. -->
+<string name="party_share_strings_end_party_toast_txt" xliff:restype="x-GENERIC/TOAST/TEXT">The party is over.</string>
+<!-- The title text on the popup of WALKMAN key user guide. -->
+<string name="party_share_strings_music_list_shuffle_txt" xliff:restype="x-GENERIC/POPUP/TITLE/V">Shuffle</string>
+<!-- Text that appears after the colon of the label "prl_strings_prl_settings_des_txt" when the version number is unknown. -->
+<string name="party_share_strings_unknown_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">unknown</string>
+<!-- Text that appears below a song in the shared playlist. %s is replaced with the name of a person who added the song. -->
+<string name="party_share_strings_music_list_add_by_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">added by %s</string>
+<!-- Text that appears on the playlist when no songs are added. -->
+<string name="party_share_strings_music_list_no_song_txt" xliff:restype="x-UNLIMITED">No songs</string>
+<plurals name="party_share_strings_music_list_minute_remaining_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">
+    <!-- Text used to indicate that the remaining time of the current song is one minute. -->
+    <item quantity="one">1 minute remaining</item>
+    <!-- Text used to indicate the remaining time of the current song. %d will be replaced with the number of minutes. -->
+    <item quantity="other">%d minutes remaining</item>
+</plurals>
+<!-- Text on the button to add songs. Users can add multiple songs at a time. -->
+<string name="party_share_strings_music_list_add_song_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">Add songs</string>
+<!-- Option on bookmark dialog to remove the bookmark [CHAR LIMIT=30] -->
+<string name="party_share_strings_popup_menu_song_remove_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Remove</string>
+<!-- Button option to play a slideshow right now without waiting for the current step (photo analysis) to complete. -->
+<string name="party_share_strings_popup_menu_play_now_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Play now</string>
+<!-- Text on the button to select a song to be played after the current song. -->
+<string name="party_share_strings_popup_menu_play_after_current_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Play after current</string>
+<!-- Message that appears on the screen when the playlist has been shuffled. -->
+<string name="party_share_strings_music_list_shuffled_toast_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Playlist shuffled.</string>
+<!-- Tooltip that appears with longpress of the icon for playing a slideshow. -->
+<string name="party_share_strings_photo_list_slideshow_txt" xliff:restype="x-GENERIC/ICS/HEADER/TITLETIP">Slideshow</string>
+<!-- Text that appears below a photo. %s will be replaced with the name of a person who uploaded the photo. -->
+<string name="party_share_strings_photo_list_uploaded_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">uploaded by %s</string>
+<!-- Text on the button to take photos. Tapping this will start Camera. -->
+<string name="party_share_strings_take_photo_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER">Take photos</string>
+<!-- Text on the button to add photos. -->
+<string name="party_share_strings_add_photo_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER">Add photos</string>
+<!-- Text that is being displayed while downloading photos. -->
+<string name="party_share_strings_downloading_photo_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Downloading photos</string>
+<!-- One of the items in the Options menu. Tapping this will stop sharing items. -->
+<string name="party_share_strings_option_menu_stop_sharing_txt" xliff:restype="x-GENERIC/ICS/OPTION">Stop sharing</string>
+<!-- Task list sort type dialog title -->
+<string name="party_share_strings_photo_list_sort_by_txt" xliff:restype="x-GENERIC/POPUP/TITLE/NOICON/V">Sort by</string>
+<!-- One of the sorting options for photos. -->
+<string name="party_share_strings_date_taken_ascending_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Date taken (Old to New)</string>
+<!-- One of the sorting options for photos. -->
+<string name="party_share_strings_date_taken_descending_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Date taken (New to Old)</string>
+<!-- One of the sorting options for photos. -->
+<string name="party_share_strings_date_uploaded_ascending_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Date uploaded (Old to New)</string>
+<!-- One of the sorting options for photos. -->
+<string name="party_share_strings_date_uploaded_descending_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">Date uploaded (New to Old)</string>
+<!-- One of the items in the Options menu. Turning this on will automatically download updates. -->
+<string name="party_share_strings_photo_list_download_setting_txt" xliff:restype="x-GENERIC/POPUP/TITLE/NOICON/V">Automatic downloads</string>
+<!-- One of the options to turn on keypress sound -->
+<string name="party_share_strings_photo_list_auto_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">ON</string>
+<!-- One of the options to turn off keypress sound -->
+<string name="party_share_strings_photo_list_manual_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">OFF</string>
+<!-- Notification that informs the name of song is currently being played. %s will be replaced with the name of the currently played song. -->
+<string name="party_share_strings_now_playing_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">Now playing: %s</string>
+<!-- Notification that appears when a guest has left the party. %s will be replaced with the name of the person left the party. -->
+<string name="party_share_strings_left_party_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">%s has left the party</string>
+<!-- Notification that appears when a guest has joined the party. %s will be replaced with the name of the person joined the party. -->
+<string name="party_share_strings_joined_party_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">%s has joined the party</string>
+<!-- Notification that appears when the party has ended. -->
+<string name="party_share_strings_end_party_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">The party [%s] has ended</string>
+<!-- Notification that appears when a partygoer added songs to the shared playlist. %s will be replaced with the name of the person. %d will be replaced with the number of songs. -->
+<string name="party_share_strings_add_song_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">%1$d songs added by %2$s</string>
+<!-- Notification that appears when a partygoer uploaded photos. %s is replaced with the name of the person. %d will be replaced with the number of photos. -->
+<string name="party_share_strings_add_photo_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">%1$d photos uploaded by %2$s</string>
+<!-- The help menu. -->
+<string name="party_share_strings_option_menu_help_txt" xliff:restype="x-GENERIC/ICS/OPTION">Help</string>
+<!-- Text on the tab that lists partygoers. %d will be replaced with the number of people. -->
+<string name="party_share_strings_tab_member_txt" xliff:restype="x-GENERIC/ICS/TAB">Partygoers: %d</string>
+<!-- Name for sticker pack containing music stickers. -->
+<string name="party_share_strings_tab_music_txt" xliff:restype="x-MP/NXT/PORTAL/ITEM/ROW2">Music</string>
+<!-- Title for facet containing photos of an by this contact -->
+<string name="party_share_strings_tab_photo_txt" xliff:restype="x-GENERIC/FACET/LARGE/ICON/SMALL">Photos</string>
+<!-- Option to view an item. -->
+<string name="party_share_strings_popup_menu_view_photo_txt" xliff:restype="x-GENERIC/POPUP/LIST/FIRST/V">View</string>
+<!-- Button option for the user to confirm an action. -->
+<string name="party_share_strings_add_song_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER">Done</string>
+<!-- Error message that appears when the party that users try to join is full. -->
+<string name="party_share_strings_member_full_txt" xliff:restype="x-GENERIC/TOAST/TEXT">This party has already reached its max number of participants.</string>
+<!-- Text used to show the current status. This is used when the device is connecting to Wi-Fi. -->
+<string name="party_share_strings_wifi_connecting_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Connecting</string>
+<!-- Progress dialog text telling user that connection is in progress -->
+<string name="party_share_strings_join_connecting_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Connecting</string>
+<!-- Text that shows on the screen that shows a specific party. This text only appears when the user has already tapped the button to join the party. -->
+<string name="party_share_strings_join_requesting_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Your request is in progress</string>
+<!-- This indicates in a progress dialog that the user has to wait while the operation is executing. -->
+<string name="party_share_strings_join_waiting_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Please wait</string>
+<!-- Error toast that appears when users tried to add more than max number of songs allowed for the playlist. -->
+<string name="party_share_strings_music_list_full_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Max number of songs added.</string>
+<!-- Volume description for media volume -->
+<string name="party_share_strings_volume_media_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Music, video, games &amp; other media</string>
+<!-- Volume description for ringtone and notification volume -->
+<string name="party_share_strings_volume_ringtone_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Ringtone &amp; notifications</string>
+<!-- Volume description for alarm volume -->
+<string name="party_share_strings_volume_alarm_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Alarms</string>
+<!-- The help menu . -->
+<string name="party_share_strings_startup_help_button_txt" xliff:restype="x-GENERIC/ICS/OPTION">Help</string>
+<!-- Party name that appears in the text field by default. %s will be replaced with the name of the host. -->
+<string name="party_share_strings_party_name_default_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/LARGE">Party hosted by %s</string>
+<!-- Text on the button to join a party. Another option "Host a party" appears above this option, so please make the writing style consistent. -->
+<string name="party_share_strings_startup_join_button_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">Join a party</string>
+<!-- Text that is being displayed while searching for parties. -->
+<string name="party_share_strings_startup_searching_txt" xliff:restype="x-UNLIMITED">Searching for parties</string>
+<!-- Text that follows a party name. %s will be replaced with the name of the host. -->
+<string name="party_share_strings_startup_host_by_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">hosted by %s</string>
+<!-- Text provided per a party. Informs users when the party started. %1$02d will be replaced with hours and %2$02d will be replaced with minutes. -->
+<string name="party_share_strings_startup_starttime_txt" xliff:restype="x-ANDROID/LIST/SETTINGS/SMALL">started at %1$02d:%2$02d</string>
+<!-- Summary text when turning Wi-Fi or bluetooth on -->
+<string name="party_share_strings_wifi_on_txt" xliff:restype="x-UNLIMITED">Turning on Wi-Fi</string>
+<!-- A notification is shown when a user's selected SSID is later disabled due to connectivity problems. This is the notification's title / ticker. -->
+<string name="party_share_strings_join_err_wifi_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Couldn\'t connect to Wi-Fi</string>
+<!-- Feedback message that appears when the host of the party has rejected the request from the user. -->
+<string name="party_share_strings_join_rejected_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Your request has been rejected.</string>
+<!-- Toast that appears when the device has been disconnected from the Wi-Fi network.  -->
+<string name="party_share_strings_wifi_disconnection_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Wi-Fi disconnected. Reconnecting...</string>
+<!-- Text to display underneath the graphical signal strength meter when
+ it is displaying Wi-Fi status and Wi-Fi is connected to a network
+ whose SSID is not available.
+ [CHAR LIMIT=20] -->
+<string name="party_share_strings_wifi_success_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Wi-Fi connected</string>
+<!-- A notification is shown when a user's selected SSID is later disabled due to connectivity problems. This is the notification's title / ticker. -->
+<string name="party_share_strings_wifi_failure_leave_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Couldn\'t connect to Wi-Fi</string>
+<!-- Error toast that appears during a party. If the connection is lost, the party is automatically ended. -->
+<string name="party_share_strings_wifi_failure_end_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Could not connect to Wi-Fi. The party has ended.</string>
+<!-- Text on the button to add songs. Users can add multiple songs at a time. -->
+<string name="party_share_strings_music_list_add_song_title_txt" xliff:restype="x-GENERIC/ICS/FOOTER/WIDE">Add songs</string>
+<!-- Error toast that appears after users set when to play a specific song. This error occurs either when the device disconnected from the network or when the music file cannot be found. -->
+<string name="party_share_strings_move_song_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Disconnected from network or file not found. Couldn\'t set.</string>
+<!-- Error message that appears when the format of the photo to be uploaded is unsupported.  -->
+<string name="party_share_strings_invalid_photo_format_err_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Unsupported format. Cannot upload.</string>
+<!-- Error message that appears when download was unsuccessful due to unknown error. -->
+<string name="party_share_strings_manual_photo_download_err_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Unknown error. Download unsuccessful.</string>
+<!-- Error message that appears when download was unsuccessful due to low memory. -->
+<string name="party_share_strings_manual_photo_download_memory_err_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Not enough memory to download the photo.</string>
+<!-- Error message that appears during automatic download. -->
+<string name="party_share_strings_auto_photo_download_memory_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Download stopped due to out of memory. To resume download, try deleting some files.</string>
+<!-- Text on the confirmation download before stopping sharing a selected photo. -->
+<string name="party_share_strings_stop_sharing_photo_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Stop sharing this photo?</string>
+<!-- The text that describes at which party the user is present. %s will be replaced with the name of the party. -->
+<string name="party_share_strings_joining_party_notification_txt" xliff:restype="x-GENERIC/ICS/STATUSBAR/NOTIFICATION/FIRST/V">You are at %s.</string>
+<!-- Brief explanation about the app on the Help screen. -->
+<string name="party_share_strings_help_intro_txt" xliff:restype="x-UNLIMITED">You can share a music playlist with friends and upload photos you take in real time without having to connect to the Internet.</string>
+<!-- Title of an article on the Help screen for PartyShare. -->
+<string name="party_share_strings_help_get_start_title_txt" xliff:restype="x-UNLIMITED">Throwing a party</string>
+<!-- The procedures of throwing a party. -->
+<string name="party_share_strings_help_get_start_txt" xliff:restype="x-UNLIMITED">1. Tap \"Host a party\" on your Xperia™.\n\n2. Fill out the party details and then tap \"OK\".\n\n\nPlease note that only Xperia™ devices can host a party.</string>
+<!-- Title of an article on the Help screen for PartyShare. -->
+<string name="party_share_strings_help_nfc_title_txt" xliff:restype="x-UNLIMITED">Inviting friends with a touch</string>
+<!-- The procedures of inviting people to a party by touching devices. -->
+<string name="party_share_strings_help_nfc_txt" xliff:restype="x-UNLIMITED">1) Make sure PartyShare is installed and NFC is enabled on each device.\n\n2) Hold two devices back to back so the NFC detection areas touch each other. When connected, the message \"Touch to beam\" appears.\n\n3) Tap anywhere on your screen.\n\n\nIf PartyShare is not installed, the installation screen will automatically appear when you touch your Xperia™ to a NFC-enabled device.\n\n\nYou can also send the link to the screen by tapping the \"Share app\" button on this screen.</string>
+<!-- Button used for all pivots where more posts are available than are downloaded, e.g. messages, photos, news feed, etc -->
+<string name="party_share_strings_help_nfc_detail_button_txt" xliff:restype="x-UNLIMITED">See more</string>
+<!-- Title of an article on the Help screen for PartyShare. -->
+<string name="party_share_strings_help_join_title_txt" xliff:restype="x-UNLIMITED">Joining a party</string>
+<!-- The procedures of joining a party. -->
+<string name="party_share_strings_help_join_txt" xliff:restype="x-UNLIMITED">1) Tap the party you wish to join. Your request will be automatically sent to the host of the party.\n\n2) Wait for the host to accept your request.</string>
+<!-- Title of an article on the Help screen for PartyShare. -->
+<string name="party_share_strings_help_enjoy_title_txt" xliff:restype="x-UNLIMITED">Sharing songs/photos</string>
+<!-- The procedures of sharing photos. -->
+<string name="party_share_strings_help_music_txt" xliff:restype="x-UNLIMITED">To share songs, tap Add songs. All songs in the shared playlist will play through the host\'s device. By connecting the device to a speaker, you can enjoy music at high volume.</string>
+<!-- The procedures of sharing songs. -->
+<string name="party_share_strings_help_photo_txt" xliff:restype="x-UNLIMITED">To share photos, tap Take photos or Add photos. All photos will be uploaded to the shared album. You can also download photos that other partygoers share. By connecting the host\'s device to a TV, you can enjoy a photo slideshow on a big screen.</string>
+<!-- Additional information/Notes regarding with using  -->
+<string name="party_share_strings_help_nfc_detail_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">NFC and Android Beam must be turned on. If your device is Xperia™, go to Settings &gt; More... and turn on \"NFC\" and \"Android Beam\".</string>
+<!-- Notes that appear before hosting a party for the first time. -->
+<string name="party_share_strings_create_party_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">・Unless invited via NFC, everyone needs your consent to join the party.\n\n\n・Using NFC, any partygoer can let other people join the party without your consent.\n\n\n・All songs in the playlist will play through your Xperia™.\n\n\n・Photos that you upload in this app will be shared with everyone at the party.\n\n\n・The SSID and passphrase of the network are shared among connected devices. </string>
+<!-- Notes that appears before joining a party. -->
+<string name="party_share_strings_join_warn_dialog_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">・Songs that you add to the playlist will be played through the host\'s device.\n\n\n・Photos that you upload in this app will be shared with everyone at the party.</string>
+<!-- Text on the progress dialog that is beling displayed while connecting to the host's device. Since this dialog usually appears when users are having trouble connecting to the host device, the hint is also provided.  -->
+<string name="party_share_strings_join_retry_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Connecting...\n\nThis may take a few minutes.\n\n\nHint: Your connection can only be established when no one attempts to connect to the host\'s device and the party hasn\'t reached its maximum number of participants.</string>
+<!-- Error toast that appears after tapping the Play button. This error occurs when all songs displayed in the playlist are unavailable for different reasons. (e.g.,  unsupported format, the device that stores songs is temporarily disconnected from the network.) -->
+<string name="party_share_strings_unable_to_play_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">No songs available for playback</string>
+<!-- Error message that appears when upload was unsuccessful due to unknown error. -->
+<string name="party_share_strings_photo_upload_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">Unknown error. Upload unsuccessful.</string>
+<!-- Error toast that appears when the host of the party is trying to play slideshow. -->
+<string name="party_share_strings_slideshow_empty_err_txt" xliff:restype="x-GENERIC/TOAST/TEXT">No photos uploaded. Cannot play a slideshow.</string>
+<!-- Error toast that appears during airplane mode or tethering. -->
+<string name="party_share_strings_wifi_off_err_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Wi-Fi cannot be turned on</string>
+<!-- Message that appears on the shared playlist when there are no songs in the list. -->
+<string name="party_share_strings_music_list_no_song_lead_txt" xliff:restype="x-UNLIMITED">No songs in the shared playlist. Try adding some songs.</string>
+<!-- Message that appears on the shared album when there are no photos in the album. -->
+<string name="party_share_strings_music_list_no_photo_lead_txt" xliff:restype="x-UNLIMITED">No photos in the shared album. Try taking some photos or uploading from your collection.</string>
+<!-- This indicates in a progress dialog that the user has to wait while the operation is executing. -->
+<string name="party_share_strings_waiting_end_party_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Please wait</string>
+<!-- This indicates in a progress dialog that the user has to wait while the operation is executing. -->
+<string name="party_share_strings_waiting_leave_party_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Please wait</string>
+<!-- Button text. Action close. -->
+<string name="party_share_strings_dialog_close_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Close</string>
+<!-- Informs the user that music that a guest tries to play is now being played by the host of the party. -->
+<string name="party_share_strings_music_list_playing_on_host_txt" xliff:restype="x-PARTYSHARE/MINIPLAYER/STATUS">Now playing on the host\'s device</string>
+<!-- Informs the user that he/she needs a software update to run the application. -->
+<string name="party_share_strings_update_warning_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">You need to update your device to the latest software to use this application.</string>
+<!-- Notes that appears when users try to join a party. -->
+<string name="party_share_strings_precautions_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Please note the following before hosting/joining a party\n\n・Photos that you upload in this app will be shared with everyone at the party and saved on their devices.\n・Songs that you add to the playlist will be played through the host\'s device.\n・Other applications may use a network that has been created for the party.</string>
+<!-- Opiton in first time instruction. User check this to not show the instruction anymore. -->
+<string name="party_share_strings_do_not_show_again_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Don\'t show this again</string>
+<!-- Notes that appear every time users try to host a party. -->
+<string name="party_share_strings_nfc_permission_msg_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Allow any partygoer to let other people join a party via NFC?\nTap \"Yes\" for anyone to be able to join the party without your consent. Or tap \"No\" for everyone to need your consent to join the party.</string>
+<!-- Text in the dialog that appears when a partygoer tried to join a party without the host's consent by touching his/her device to another partygoer's device via NFC. -->
+<string name="party_share_strings_nfc_prohibit_msg_txt" xliff:restype="x-GENERIC/POPUP/TEXT/V">Cannot join this party without the host\'s consent via NFC. Either you need to be invited by the host or select this party in a list where parties are present.</string>
+<!-- Network positioning verification Yes. Button to push to share location information. -->
+<string name="party_share_strings_dialog_yes_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">Yes</string>
+<!-- Network positioning verification No. Button to push to deny sharing of location information. -->
+<string name="party_share_strings_dialog_no_button_txt" xliff:restype="x-GENERIC/POPUP/BUTTONNORMAL/V">No</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">WLAN\u0020 চালু হচ্ছে</string>
+    <string name="party_share_strings_join_err_wifi_txt">WLAN তে সংযোগ করতে পারেনি</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN এর সংযোগ বিচ্ছিন্ন হয়েছে। পুনঃসংযোগ করুন...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN সংযুক্ত</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">WLAN তে সংযোগ করতে পারেনি</string>
+    <string name="party_share_strings_wifi_failure_end_txt">WLAN -তে সংযোগ করা যায় নি। পার্টি শেষ হয়েছে।</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN চালু করা যাবে না</string>
+</resources>

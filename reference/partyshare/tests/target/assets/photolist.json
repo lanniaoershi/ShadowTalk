@@ -1,0 +1,15 @@
+{
+    "photo": [
+        {
+            "local_file_path": "\/data\/data\/com.sonymobile.partyshare\/files\/image.jpg",
+            "local_thumbnail_path": "\/data\/data\/com.sonymobile.partyshare\/files\/thumbnail\/imageThumb.jpg",
+            "owner_address": "aa:bb:cc:dd:ee:ff",
+            "mime_type": "image\/jpeg",
+            "thumbnail_filename": "imageThumb.jpg",
+            "master_thumbnail_path": "\/host\/thumbnail\/1",
+            "master_file_path": "\/file\/1",
+            "taken_date": "11111",
+            "shared_date": "22222"
+        }
+    ]
+}

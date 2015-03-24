@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- "About phone settings, Legal information setting option name and title of dialog box holding license info" -->
+    <string name="label_open_source_label" xliff:restype="x-_UNLIMITED">Open source licenses</string>
+    <!-- Disclaimer header to be displayed at first start-up of the application -->
+    <string name="title_disclaimer" xliff:restype="x-_UNLIMITED">Usage info</string>
+    <!-- Selection key to be used for accepting the disclaimer -->
+    <string name="label_accept" xliff:restype="x-_UNLIMITED">Accept</string>
+    <!-- Selection key to be used for accepting the disclaimer -->
+    <string name="label_agree" xliff:restype="x-_UNLIMITED">Agree</string>
+    <!-- Selection key to be used for declining the disclaimer -->
+    <string name="label_decline" xliff:restype="x-_UNLIMITED">Decline</string>
+    <!-- Selection key to be used for declining the disclaimer -->
+    <string name="label_disagree" xliff:restype="x-_UNLIMITED">Disagree</string>
+    <!-- Title of the terms popup dialog -->
+    <string name="label_terms_and_conditions" xliff:restype="x-_UNLIMITED">Terms and Conditions</string>
+    <!-- Disclaimer text about data charges for popup window -->
+    <string name="disclaimer_data_charges" xliff:restype="x-_UNLIMITED">Your use of this service may be subject to data traffic charges depending on your mobile phone subscription with your service provider.</string>
+    <!-- Disclaimer text about terms of usage for popup window -->
+    <string name="disclaimer_terms" xliff:restype="x-_UNLIMITED">The &lt;a href=&quot;http://www.sonymobile.com/terms-of-use-applications&quot;&gt;Terms of Use&lt;/a&gt; apply to your use of the application.</string>
+    <!-- Checkbox text about consenting to terms of usage for popup window -->
+    <string name="disclaimer_terms_consent" xliff:restype="x-_UNLIMITED">I consent to the Sony Mobile &lt;a href=&quot;http://www.sonymobile.com/terms-of-use-applications&quot;&gt;Terms of Use&lt;/a&gt;</string>
+    <!-- Checkbox text about consenting to privacy policy and terms of usage for popup window -->
+    <string name="disclaimer_terms_and_privacy_consent" xliff:restype="x-_UNLIMITED">I consent to the Sony Mobile &lt;a href=&quot;http://www.sonymobile.com/terms-of-use-applications&quot;&gt;Terms of Use&lt;/a&gt; and &lt;a href=&quot;http://www.sonymobile.com/privacy&quot;&gt;Privacy Policy&lt;/a&gt;</string>
+  <!-- Checkbox text about consenting to privacy policy for popup window -->
+  <string name="disclaimer_privacy_consent" xliff:restype="x-_UNLIMITED">I consent to the Sony Mobile &lt;a href=&quot;http://www.sonymobile.com/privacy&quot;&gt;Privacy Policy&lt;/a&gt;</string>
+</resources>

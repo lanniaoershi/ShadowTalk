@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Open Source-Lizenzen</string>
+    <string name="title_disclaimer">Nutzungsinformationen</string>
+    <string name="label_accept">Akzeptieren</string>
+    <string name="label_agree">Ich stimme zu</string>
+    <string name="label_decline">Ablehnen</string>
+    <string name="label_disagree">Ich stimme nicht zu</string>
+    <string name="label_terms_and_conditions">Vertragsbestimmungen</string>
+    <string name="disclaimer_data_charges">Je nach dem bestehenden Vertrag mit Ihrem Dienstanbieter können durch Ihre Nutzung dieses Diensts Gebühren für Datenübertragung fällig werden.</string>
+    <string name="disclaimer_terms">Ihre Nutzung der Anwendung unterliegt den &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Nutzungsbestimmungen&lt;/a&gt;.</string>
+    <string name="disclaimer_terms_consent">Ich stimme den &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Nutzungsbestimmungen&lt;/a&gt; von Sony Mobile zu.</string>
+    <string name="disclaimer_terms_and_privacy_consent">Ich stimme den &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Nutzungsbestimmungen&lt;/a&gt; und der &lt;a href=http://www.sonymobile.com/privacy&gt;Datenschutzrichtlinie&lt;/a&gt; von Sony Mobile zu.</string>
+    <string name="disclaimer_privacy_consent">Ich stimme der &lt;a href=http://www.sonymobile.com/privacy&gt;Datenschutzrichtlinie&lt;/a&gt; von Sony Mobile zu.</string>
+</resources>

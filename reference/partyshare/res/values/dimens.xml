@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+    <dimen name="txt_size_large">33dp</dimen>
+    <dimen name="txt_size_medium">18dp</dimen>
+    <dimen name="txt_size_small">14dp</dimen>
+
+    <dimen name="partyshare_btn_txt_size">14dp</dimen>
+    <dimen name="partyshare_btn_height">48dp</dimen>
+
+    <dimen name="help_intro_txt_size">20dp</dimen>
+
+    <dimen name="image_thumbnail_size">600dp</dimen>
+    <dimen name="image_thumbnail_spacing">2dp</dimen>
+
+    <dimen name="music_title_txt_size">18dp</dimen>
+    <dimen name="playview_music_title_txt_size">14dp</dimen>
+    <dimen name="artist_name_txt_size">12dp</dimen>
+
+    <dimen name="music_playview_owner_height">58dp</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="party_share_strings_place_holder_content_txt">Turn your Xperia™ into a jukebox. Broadcast your party with real-time photo streaming.\nThis is a perfect app to have when you throw a party or go for a drive with friends.\nWith PartyShare, you can create a shared playlist with your friends and stream songs from your Xperia™ to a speaker. You can also upload photos effortlessly in real time.\nInstall PartyShare now and warm up your party!</string>
+<string name="party_share_strings_err_not_installed_txt">Google Play Store is not installed or disabled.</string>
+<string name="party_share_strings_end_party_notification_txt">The party [%s] has ended</string>
+<string name="party_share_strings_member_full_txt">This party has already reached its max number of participants.</string>
+<string name="party_share_strings_music_list_full_txt">Max number of songs added.</string>
+<string name="party_share_strings_wifi_on_txt">Turning on Wi-Fi</string>
+<string name="party_share_strings_auto_photo_download_memory_err_txt">Download stopped due to out of memory. To resume download, try deleting some files.</string>
+<string name="party_share_strings_help_get_start_txt">1. Tap \"Host a party\" on your Xperia™.\n\n2. Fill out the party details and then tap \"OK\".\n\n\nPlease note that only Xperia™ devices can host a party.</string>
+<string name="party_share_strings_help_nfc_txt">1) Make sure PartyShare is installed and NFC is enabled on each device.\n\n2) Hold two devices back to back so the NFC detection areas touch each other. When connected, the message \"Touch to beam\" appears.\n\n3) Tap anywhere on your screen.\n\n\nIf PartyShare is not installed, the installation screen will automatically appear when you touch your Xperia™ to a NFC-enabled device.\n\n\nYou can also send the link to the screen by tapping the \"Share app\" button on this screen.</string>
+<string name="party_share_strings_help_music_txt">To share songs, tap Add songs. All songs in the shared playlist will play through the host\'s device. By connecting the device to a speaker, you can enjoy music at high volume.</string>
+<string name="party_share_strings_create_party_dialog_txt">・Unless invited via NFC, everyone needs your consent to join the party.\n\n\n・Using NFC, any partygoer can let other people join the party without your consent.\n\n\n・All songs in the playlist will play through your Xperia™.\n\n\n・Photos that you upload in this app will be shared with everyone at the party.\n\n\n・The SSID and passphrase of the network are shared among connected devices. </string>
+<string name="party_share_strings_nfc_prohibit_msg_txt">Cannot join this party without the host\'s consent via NFC. Either you need to be invited by the host or select this party in a list where parties are present.</string>
+</resources>

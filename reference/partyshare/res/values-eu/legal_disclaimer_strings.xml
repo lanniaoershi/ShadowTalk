@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Iturburu irekiko lizentziak</string>
+    <string name="title_disclaimer">Erabilera informazioa</string>
+    <string name="label_accept">Onartu</string>
+    <string name="label_agree">Onetsi</string>
+    <string name="label_decline">Baztertu</string>
+    <string name="label_disagree">Ezetsi</string>
+    <string name="label_terms_and_conditions">Zehaztapenak eta baldintzak</string>
+    <string name="disclaimer_data_charges">\"Zerbitzu honi ematen diozun erabilerari datu trafikoaren tarifak aplika dakizkioke, zerbitzu hornitzailearekin duzun telefono mugikorraren harpidetzaren arabera.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Erabiltzeko baldintzak&lt;/a&gt; aplikatzen zaizkio aplikazioari ematen diozun erabilerari.</string>
+    <string name="disclaimer_terms_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Erabiltzeko baldintzak&lt;/a&gt; onartzen ditut</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Erabiltzeko baldintzak&lt;/a&gt; eta &lt;a href=http://www.sonymobile.com/privacy&gt;Pribatutasun gidalerroak&lt;/a&gt; onartzen ditut</string>
+    <string name="disclaimer_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;Pribatutasun gidalerroak&lt;/a&gt; onartzen ditut</string>
+</resources>

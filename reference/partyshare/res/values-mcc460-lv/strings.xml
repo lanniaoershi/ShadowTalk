@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">Notiek WLAN savienojuma ieslēgšana...</string>
+    <string name="party_share_strings_join_err_wifi_txt">Nevarēja izveidot savienojumu ar WLAN.</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">Savienojums ar WLAN tīklu pārtraukts. Notiek savienojuma izveide...</string>
+    <string name="party_share_strings_wifi_success_txt">Izv. sav. ar WLAN</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">Nevarēja izveidot savienojumu ar WLAN.</string>
+    <string name="party_share_strings_wifi_failure_end_txt">Nevarēja izveidot savienojumu ar WLAN tīklu. Pasākums beidzies.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN nevar ieslēgt</string>
+</resources>

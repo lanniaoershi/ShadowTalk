@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/party_share_music_list_previous_pressed_icn" />
+    <item android:state_focused="true"
+        android:drawable="@drawable/party_share_music_list_previous_focused_icn" />
+    <item android:state_enabled="false"
+        android:drawable="@drawable/party_share_music_list_previous_disable_icn" />
+    <item android:drawable="@drawable/party_share_music_list_previous_icn" />
+</selector>

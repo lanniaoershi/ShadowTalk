@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">WLAN ഓണാക്കുന്നു...</string>
+    <string name="party_share_strings_join_err_wifi_txt">WLAN -യില്‍ കണക്ടുചെയ്യാന്‍ കഴിഞ്ഞില്ല</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN വിച്ഛേദിക്കപ്പെട്ടു. വീണ്ടും കണക്ടു ചെയ്യുന്നു...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN കണക്ടുചെയ്തു</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">WLAN -യില്‍ കണക്ടുചെയ്യാന്‍ കഴിഞ്ഞില്ല</string>
+    <string name="party_share_strings_wifi_failure_end_txt">WLAN -യിലേക്ക് കണക്ടു ചെയ്യാന്‍ കഴിഞ്ഞില്ല. പാർട്ടി കഴിഞ്ഞു.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN ഓണാക്കാൻ കഴിയില്ല.</string>
+</resources>

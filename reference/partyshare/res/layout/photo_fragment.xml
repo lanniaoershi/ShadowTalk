@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/party_share_tab_divider_bottom_icn" />
+    <GridView
+        android:id="@+id/photo_list"
+        style="@style/PhotoGridLayout"
+        android:requiresFadingEdge="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/image_thumbnail_spacing" >
+    </GridView>
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/party_share_strings_music_list_no_photo_lead_txt"
+        android:textSize="@dimen/txt_size_small"
+        android:textColor="@color/sub_text_color"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/photo_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partyshare_btn_height"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false" >
+        <LinearLayout
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@drawable/party_share_button"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            style="?android:attr/buttonBarButtonStyle" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/party_share_photo_take_camera_icn" >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/party_share_strings_take_photo_button_txt"
+                android:textSize="@dimen/partyshare_btn_txt_size"
+                android:textColor="@color/main_text_color"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="8dp" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/add_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@drawable/party_share_button"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            style="?android:attr/buttonBarButtonStyle" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/party_share_member_list_plus_icn" >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/party_share_strings_add_photo_button_txt"
+                android:textSize="@dimen/partyshare_btn_txt_size"
+                android:textColor="@color/main_text_color"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="8dp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

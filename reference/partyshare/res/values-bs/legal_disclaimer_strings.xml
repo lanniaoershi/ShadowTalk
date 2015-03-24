@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Licence za otvorene izvore</string>
+    <string name="title_disclaimer">Podaci o korištenju</string>
+    <string name="label_accept">Prihvati</string>
+    <string name="label_agree">Slažem se</string>
+    <string name="label_decline">Odbij</string>
+    <string name="label_disagree">Ne slažem se</string>
+    <string name="label_terms_and_conditions">Uvjeti i odredbe</string>
+    <string name="disclaimer_data_charges">Vaše korištenje ove usluge može podlijegati troškovima prometa podataka ovisno o vašoj pretplati za mobilnu telefoniju kod pružatelja usluga.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Uslovi korištenja&lt;/a&gt; odnose se na vaše korištenje aplikacije.</string>
+    <string name="disclaimer_terms_consent">Pristajem na &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Uslove korištenja&lt;/a&gt; koje definira kompanija Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Pristajem na &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Uslove korištenja&lt;/a&gt; i &lt;a href=http://www.sonymobile.com/privacy&gt;Pravila privatnosti&lt;/a&gt; koje definira kompanija Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Pristajem na &lt;a href=http://www.sonymobile.com/privacy&gt;Politiku privatnosti&lt;/a&gt; koju definira kompanija Sony Mobile</string>
+</resources>

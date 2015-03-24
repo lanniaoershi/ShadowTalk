@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Lisensi open source</string>
+    <string name="title_disclaimer">Katrangan dianggo</string>
+    <string name="label_accept">Tampa</string>
+    <string name="label_agree">Setuju</string>
+    <string name="label_decline">Tolak</string>
+    <string name="label_disagree">Ora setuju</string>
+    <string name="label_terms_and_conditions">Sarat lan Katemtuan</string>
+    <string name="disclaimer_data_charges">Panggunaan layanan iki dening sampeyan bisa uga dikenani biaya lalu lintas data gumantung saka operator ponsel sampeyan.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Panggunan&lt;/a&gt; sing laku tumrap panggunan aplikasi sampeyan.</string>
+    <string name="disclaimer_terms_consent">Aku sarujuk karo &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Panggunan&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Aku sarujuk karo &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Panggunan&lt;/a&gt; lan &lt;a href=http://www.sonymobile.com/privacy&gt;Kabijakan Privasi&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Aku sarujuk karo &lt;a href=http://www.sonymobile.com/privacy&gt;Kabijakan Privasi&lt;/a&gt; Sony Mobile</string>
+</resources>

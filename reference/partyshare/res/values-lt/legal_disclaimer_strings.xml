@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Atvirosios programinės įrangos licencijos</string>
+    <string name="title_disclaimer">Naudojimo informacija</string>
+    <string name="label_accept">Sutikti</string>
+    <string name="label_agree">Sutinku</string>
+    <string name="label_decline">Nesutinku</string>
+    <string name="label_disagree">Nesutinku</string>
+    <string name="label_terms_and_conditions">Sąlygos ir nuostatos</string>
+    <string name="disclaimer_data_charges">\"Naudojantis šia paslauga gali būti taikomi mokesčiai už perduodamų duomenų srautą, kurie priklauso nuo su paslaugų teikėju sudarytos mobiliojo telefono abonemento sutarties.\"</string>
+    <string name="disclaimer_terms">Naudojantis programa taikomos &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;naudojimo sąlygos&lt;/a&gt;.</string>
+    <string name="disclaimer_terms_consent">Sutinku su „Sony Mobile“ &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;naudojimo sąlygomis&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sutinku su „Sony Mobile“ &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;naudojimo sąlygomis&lt;/a&gt; ir &lt;a href=http://www.sonymobile.com/privacy&gt;privatumo politika&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Sutinku su „Sony Mobile“ &lt;a href=http://www.sonymobile.com/privacy&gt;privatumo politika&lt;/a&gt;</string>
+</resources>

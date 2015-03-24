@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/music_playview_owner_height"
+    android:background="@drawable/party_share_music_list_panel"
+    android:clickable="true" >
+
+    <!-- Play view control area -->
+    <LinearLayout
+        android:id="@+id/music_playview_control_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:weightSum="1"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/rewindbutton"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/party_share_music_list_previous" />
+
+        <com.sonymobile.partyshare.ui.PlayPauseButton
+            android:id="@+id/play_pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <ImageButton
+            android:id="@+id/skipbutton"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/party_share_music_list_next" />
+    </LinearLayout>
+
+    <!-- Album art -->
+    <ImageView
+        android:id="@+id/image_playview_album_art_owner"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <!-- Play info area -->
+    <LinearLayout
+        android:id="@+id/music_playview_info_area_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_playview_album_art_owner"
+        android:layout_toLeftOf="@id/music_playview_control_area"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_music_playview_title_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="@dimen/playview_music_title_txt_size"
+            android:textAppearance="@style/MusicPlayView" />
+
+        <TextView
+            android:id="@+id/text_music_playview_artist_name_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/artist_name_txt_size"
+            android:textAppearance="@style/MusicPlayViewSmall" />
+    </LinearLayout>
+
+</RelativeLayout>

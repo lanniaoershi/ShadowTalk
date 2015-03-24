@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">開放原始碼授權</string>
+    <string name="title_disclaimer">使用資料</string>
+    <string name="label_accept">接受</string>
+    <string name="label_agree">同意</string>
+    <string name="label_decline">拒絕</string>
+    <string name="label_disagree">不同意</string>
+    <string name="label_terms_and_conditions">條款與細則</string>
+    <string name="disclaimer_data_charges">我們將根據您與網絡服務商簽訂的手提電話月租方案，按數據流量向您收取服務費用。</string>
+    <string name="disclaimer_terms">您使用應用程式的方式受到&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用規定&lt;/a&gt;所規範。</string>
+    <string name="disclaimer_terms_consent">我同意Sony Mobile的&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用規定&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">我同意Sony Mobile的&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;使用規定&lt;/a&gt;和&lt;a href=http://www.sonymobile.com/privacy&gt;隱私權政策&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">我同意Sony Mobile的&lt;a href=http://www.sonymobile.com/privacy&gt;隱私權政策&lt;/a&gt;</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Licenţe de sursă deschisă</string>
+    <string name="title_disclaimer">Informaţii privind utilizarea</string>
+    <string name="label_accept">Acceptare</string>
+    <string name="label_agree">De acord</string>
+    <string name="label_decline">Refuz</string>
+    <string name="label_disagree">Nu sunt de acord</string>
+    <string name="label_terms_and_conditions">Termeni şi condiţii</string>
+    <string name="disclaimer_data_charges">\"Utilizarea acestui serviciu se poate supune taxării pentru traficul de date, în funcţie de abonamentul telefonului mobil de la operatorul de reţea.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Termenii de utilizare&lt;/a&gt; se aplică utilizării de către dvs. a aplicaţiei.</string>
+    <string name="disclaimer_terms_consent">Sunt de acord cu &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Termenii de utilizare&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sunt de acord cu &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Termenii de utilizare&lt;/a&gt; şi &lt;a href=http://www.sonymobile.com/privacy&gt;Politica de confidenţialitate&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Sunt de acord cu &lt;a href=http://www.sonymobile.com/privacy&gt;Politica de confidenţialitate&lt;/a&gt; Sony Mobile</string>
+</resources>

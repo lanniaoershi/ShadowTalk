@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Buka lisensi sumber</string>
+    <string name="title_disclaimer">Inpo Pamake</string>
+    <string name="label_accept">Satuju</string>
+    <string name="label_agree">Satuju</string>
+    <string name="label_decline">Tampik</string>
+    <string name="label_disagree">Teu satuju</string>
+    <string name="label_terms_and_conditions">Sarat jeung katangtuan</string>
+    <string name="disclaimer_data_charges">Pamakean laden ieu meureun tunduk ka biaya patalimarga data gumantung ka langganan ponsel anjeun ka operator jaringan.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Pamake&lt;/a&gt; milampah jang pamakean anjeun dina aplikasi.</string>
+    <string name="disclaimer_terms_consent">Abdi satuju ka&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Pamake&lt;/a&gt;Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Abdi satuju ka &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Sarat Pamake&lt;/a&gt; jeung &lt;a href=http://www.sonymobile.com/privacy&gt;Kawijakan Pribadi&lt;/a&gt; Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Abdi satuju ka&lt;a href=http://www.sonymobile.com/privacy&gt;Kawijakan Pribadi&lt;/a&gt; Sony Mobile</string>
+</resources>

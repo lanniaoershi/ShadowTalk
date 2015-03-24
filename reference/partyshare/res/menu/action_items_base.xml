@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_slideshow"
+        android:icon="@drawable/party_share_photo_slideshow_icn"
+        android:title="@string/party_share_strings_photo_list_slideshow_txt"
+        android:visible="false"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_download_mode"
+        android:title="@string/party_share_strings_option_menu_download_setting_txt"
+        android:visible="false"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_sort_photo"
+        android:title="@string/party_share_strings_option_menu_sort_photos_txt"
+        android:visible="false"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_legal"
+        android:title="@string/party_share_strings_option_menu_legal_txt"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/party_share_strings_option_menu_help_txt"
+        android:showAsAction="never" />
+</menu>

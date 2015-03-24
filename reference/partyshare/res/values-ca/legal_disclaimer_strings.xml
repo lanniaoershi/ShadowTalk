@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Llicències de codi obert</string>
+    <string name="title_disclaimer">Informació d\'ús</string>
+    <string name="label_accept">Accepta</string>
+    <string name="label_agree">D\'acord</string>
+    <string name="label_decline">Rebutja</string>
+    <string name="label_disagree">No estic d\'acord</string>
+    <string name="label_terms_and_conditions">Termes i condicions</string>
+    <string name="disclaimer_data_charges">L\'ús que feu d\'aquest servei pot estar subjecte a càrrecs de trànsit de dades en funció de la vostra subscripció del telèfon mòbil al proveïdor de serveis.</string>
+    <string name="disclaimer_terms">Les &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Condicions d\'ús&lt;/a&gt; s\'apliquen a l\'ús que feu de l\'aplicació.</string>
+    <string name="disclaimer_terms_consent">Accepto les &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Condicions d\'ús&lt;/a&gt; de Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Accepto les &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Condicions d\'ús&lt;/a&gt; i la &lt;a href=http://www.sonymobile.com/privacy&gt;Política de privadesa&lt;/a&gt; de Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Accepto la &lt;a href=http://www.sonymobile.com/privacy&gt;Política de privadesa&lt;/a&gt; de Sony Mobile</string>
+</resources>

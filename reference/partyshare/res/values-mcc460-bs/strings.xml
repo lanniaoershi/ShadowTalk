@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">Uključivanje WLAN veze u toku</string>
+    <string name="party_share_strings_join_err_wifi_txt">Nije bilo moguće povezati se na WLAN</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN veza prekinuta. Ponovo se uspostavlja...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN je povezan</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">Nije bilo moguće povezati se na WLAN</string>
+    <string name="party_share_strings_wifi_failure_end_txt">Nije bilo moguće povezati se na WLAN. Zabava je završena.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLAN se ne može uključiti</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/party_share_tab_divider_bottom_icn" />
+    <ListView
+        android:id="@+id/music_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/party_share_strings_music_list_no_song_lead_txt"
+        android:textSize="@dimen/txt_size_small"
+        android:textColor="@color/sub_text_color"
+        android:layout_weight="1" />
+    <include
+        layout="@layout/music_playback_view_owner"
+        android:id="@+id/music_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <include
+        layout="@layout/music_playback_view_guest"
+        android:id="@+id/host_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+        <LinearLayout
+            android:id="@+id/add_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/partyshare_btn_height"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/party_share_button"
+            android:clickable="true"
+            style="?android:attr/buttonBarButtonStyle" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/party_share_member_list_plus_icn" >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/party_share_strings_music_list_add_song_txt"
+                android:textSize="@dimen/partyshare_btn_txt_size"
+                android:textColor="@color/main_text_color"
+                android:layout_marginLeft="8dp" >
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/divider_color">
+        </View>
+    </LinearLayout>
+</LinearLayout>

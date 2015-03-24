@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Giấy phép nguồn mở</string>
+    <string name="title_disclaimer">Thông tin sử dụng</string>
+    <string name="label_accept">Chấp nhận</string>
+    <string name="label_agree">Đồng ý</string>
+    <string name="label_decline">Từ chối</string>
+    <string name="label_disagree">Không đồng ý</string>
+    <string name="label_terms_and_conditions">Điều khoản và Điều kiện</string>
+    <string name="disclaimer_data_charges">\"Việc bạn sử dụng dịch vụ này có thể phải chịu những thay đổi về lưu lượng dữ liệu, tuỳ thuộc vào việc đăng ký điện thoại di động với nhà cung cấp dịch vụ của bạn.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Điều khoản Sử dụng&lt;/a&gt; áp dụng cho việc sử dụng ứng dụng của bạn.</string>
+    <string name="disclaimer_terms_consent">Tôi tuân thủ theo &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Điều khoản Sử dụng&lt;/a&gt; của Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Tôi tuân thủ theo &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Điều khoản Sử dụng&lt;/a&gt; và &lt;a href=http://www.sonymobile.com/privacy&gt;Chính sách Bảo mật&lt;/a&gt; của Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Tôi thuân thủ theo &lt;a href=http://www.sonymobile.com/privacy&gt;Chính sách Bảo mật&lt;/a&gt; của Sony Mobile</string>
+</resources>

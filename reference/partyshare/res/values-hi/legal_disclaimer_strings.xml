@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">मुक्त स्रोत लाइसेंस</string>
+    <string name="title_disclaimer">उपयोग जानकारी</string>
+    <string name="label_accept">स. कर.</string>
+    <string name="label_agree">सहमत हूँ</string>
+    <string name="label_decline">अस्वीकृत है</string>
+    <string name="label_disagree">असहमत हूँ</string>
+    <string name="label_terms_and_conditions">नियम और शर्तें</string>
+    <string name="disclaimer_data_charges">इस सेवा के आपके उपयोग पर आपके सेवा प्रदाता के साथ आपकी मोबाइल फ़ोन सदस्यता के आधार पर डेटा ट्रैफ़िक शुल्क लगाया जा सकता है.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;उपयोग की शर्तें&lt;/a&gt; आपके द्वारा अनुप्रयोग के उपयोग पर लागू होता है।</string>
+    <string name="disclaimer_terms_consent">मैं Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;उपयोग की शर्तों&lt;/a&gt; से सहमत हूँ</string>
+    <string name="disclaimer_terms_and_privacy_consent">मैं Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;उपयोग की शर्तों&lt;/a&gt; और &lt;a href=http://www.sonymobile.com/privacy&gt;गोपनीयता नीति&lt;/a&gt; से सहमत हूँ</string>
+    <string name="disclaimer_privacy_consent">मैं Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;गोपनीयता नीति&lt;/a&gt; से सहमत हूँ</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="12dp"
+            android:textSize="@dimen/txt_size_small"
+            android:text="@string/party_share_strings_setup_party_name_txt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_party_name"
+            android:labelFor="@+id/edit_party_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="42dp"
+            android:maxLength="@integer/max_party_name_length"
+            android:inputType="text">
+        </EditText>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="12dp"
+            android:textSize="@dimen/txt_size_small"
+            android:text="@string/party_share_strings_setup_my_name_txt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:labelFor="@+id/edit_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="42dp"
+            android:maxLength="@integer/max_user_name_length"
+            android:inputType="text">
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_host"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partyshare_btn_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/party_share_button"
+        android:textSize="@dimen/partyshare_btn_txt_size"
+        android:text="@android:string/ok" >
+    </Button>
+
+</merge>

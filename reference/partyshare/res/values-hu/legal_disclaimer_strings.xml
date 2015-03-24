@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Nyílt forráskódú licenc\u0020</string>
+    <string name="title_disclaimer">Használati adatok</string>
+    <string name="label_accept">Elfogadom</string>
+    <string name="label_agree">Egyetértek</string>
+    <string name="label_decline">Nem fogadom el</string>
+    <string name="label_disagree">Nem értek egyet</string>
+    <string name="label_terms_and_conditions">Feltételek és kikötések</string>
+    <string name="disclaimer_data_charges">\"A szolgáltatás igénybevétele a szolgáltatójával kötött mobiltelefon-előfizetés alapján, az adatforgalomtól függően díjköteles lehet.\"</string>
+    <string name="disclaimer_terms">A &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Használati feltételek&lt;/a&gt; az alkalmazás Ön általi használatára vonatkoznak.</string>
+    <string name="disclaimer_terms_consent">Elfogadom a Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Használati feltételeit&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Elfogadom a Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Használati feltételeit&lt;/a&gt; és &lt;a href=http://www.sonymobile.com/privacy&gt;Adatvédelmi szabályzatát&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Elfogadom a Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;Adatvédelmi szabályzatát&lt;/a&gt;</string>
+</resources>

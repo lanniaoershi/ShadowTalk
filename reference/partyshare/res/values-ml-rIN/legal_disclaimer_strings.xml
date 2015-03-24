@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">സോഴ്സ് ലൈസന്‍സുകള്‍ തുറക്കുക</string>
+    <string name="title_disclaimer">ഉപയോഗ വിവരം</string>
+    <string name="label_accept">അംഗീകരിക്കുക</string>
+    <string name="label_agree">സമ്മതിക്കുക</string>
+    <string name="label_decline">നിരസിക്കുക</string>
+    <string name="label_disagree">വിസമ്മതിക്കുക</string>
+    <string name="label_terms_and_conditions">വ്യവസ്ഥകളും നിബന്ധനകളും</string>
+    <string name="disclaimer_data_charges">ഈ സേവനം നിങ്ങള്‍ ഉപയോഗിക്കുന്നതിന്, നിങ്ങളുടെ സേവന ദാതാവുമൊത്തുള്ള നിങ്ങളുടെ ഫോണ്‍ സബ്സ്ക്രിപ്ഷനെ അടിസ്ഥാനമാക്കി, ഡാറ്റാ ട്രാഫിക്ക് നിരക്കുകള്‍ ബാധകമായേക്കാം.</string>
+    <string name="disclaimer_terms">ആപ്ലിക്കേഷന്റെ നിങ്ങളുടെ ഉപയോഗത്തിന് &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ഉപയോഗ വ്യവസ്ഥകള്‍&lt;/a&gt; ബാധകമാണ്.</string>
+    <string name="disclaimer_terms_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ഉപയോഗ വ്യവസ്ഥകള്‍&lt;/a&gt; ഞാന്‍ സമ്മതിക്കുന്നു</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sony Mobile&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ഉപയോഗ വ്യവസ്ഥകളും&lt;/a&gt; &lt;a href=http://www.sonymobile.com/privacy&gt;സ്വകാര്യതാ നയവും&lt;/a&gt; ഞാന്‍ സമ്മതിക്കുന്നു</string>
+    <string name="disclaimer_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;സ്വകാര്യതാ നയം&lt;/a&gt; ഞാന്‍ സമ്മതിക്കുന്നു</string>
+</resources>

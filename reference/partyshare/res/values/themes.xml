@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:textSize">@dimen/txt_size_medium</item>
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/PartyShareActionOverflowButton</item>
+    </style>
+
+    <style name="ActionBarOverlayTheme" parent="@style/AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="PartyShareActivityTheme" parent="@style/AppTheme">
+        <item name="android:actionBarStyle">@style/PartyShareActivityActionBar</item>
+        <item name="android:actionBarTabStyle">@style/PartyShareActivityActionBarTabView</item>
+        <item name="android:actionBarTabBarStyle">@style/PartyShareActivityActionBarTabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/PartyShareActivityActionBarTabText</item>
+    </style>
+
+    <style name="MusicPickerTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textSize">@dimen/txt_size_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Ашық деректер көзі лицензиялары</string>
+    <string name="title_disclaimer">Пайдалану жөніндегі мәліметтер</string>
+    <string name="label_accept">Қабылдау</string>
+    <string name="label_agree">Келісу</string>
+    <string name="label_decline">Қабылдамау</string>
+    <string name="label_disagree">Келіспеу</string>
+    <string name="label_terms_and_conditions">Шарттар мен талаптар</string>
+    <string name="disclaimer_data_charges">Бұл қызметті пайдалану үшін қызмет жектізушісіне ұялы телефон жазылымына байланысты деректер трафигі ақысы алынуы мүмкін.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Шарттар мен талаптар&lt;/a&gt; бағдарламаны пайдалану үшін қолданылады.</string>
+    <string name="disclaimer_terms_consent">Мен Sony Mobile компаниясының &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Шарттары мен талаптарымен&lt;/a&gt; келісемін</string>
+    <string name="disclaimer_terms_and_privacy_consent">Мен Sony Mobile компаниясының &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Шарттары мен талаптарымен&lt;/a&gt; және &lt;a href=http://www.sonymobile.com/privacy&gt;Құпиялылық саясатымен&lt;/a&gt; келісемін</string>
+    <string name="disclaimer_privacy_consent">Мен Sony Mobile компаниясының &lt;a href=http://www.sonymobile.com/privacy&gt;Құпиялылық саясатымен&lt;/a&gt; келісемін</string>
+</resources>

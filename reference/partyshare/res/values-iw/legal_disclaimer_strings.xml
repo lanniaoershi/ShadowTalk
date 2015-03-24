@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">פתח רשיונות מקור</string>
+    <string name="title_disclaimer">מידע על שימוש</string>
+    <string name="label_accept">קבל</string>
+    <string name="label_agree">מסכים</string>
+    <string name="label_decline">דחה</string>
+    <string name="label_disagree">לא מסכים</string>
+    <string name="label_terms_and_conditions">תנאים והגבלות</string>
+    <string name="disclaimer_data_charges">ייתכן שהשימוש שלך בשירות יהיה כרוך בעלויות של תעבורות נתונים בהתאם למנוי הטלפון הסלולרי שלך אצל ספק השירות.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;תנאי השימוש&lt;/a&gt; חלים על שימושך ביישום.</string>
+    <string name="disclaimer_terms_consent">אני מסכים ל&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;תנאי השימוש&lt;/a&gt; של Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">אני מסכים ל&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;תנאי השימוש&lt;/a&gt; ול&lt;a href=http://www.sonymobile.com/privacy&gt;מדיניות הפרטיות&lt;/a&gt; של Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">אני מסכים ל&lt;a href=http://www.sonymobile.com/privacy&gt;מדיניות הפרטיות&lt;/a&gt; של Sony Mobile</string>
+</resources>

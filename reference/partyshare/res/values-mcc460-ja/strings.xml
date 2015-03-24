@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">WLANをONにしています...</string>
+    <string name="party_share_strings_join_err_wifi_txt">WLANに接続できませんでした</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN接続が切断されました。再接続しています...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN接続済み</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">WLANに接続できませんでした</string>
+    <string name="party_share_strings_wifi_failure_end_txt">WLANに接続できませんでした。パーティを終了しました。</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLANをONにできません</string>
+</resources>

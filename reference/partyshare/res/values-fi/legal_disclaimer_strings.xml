@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Avointen lähteiden käyttöoikeudet</string>
+    <string name="title_disclaimer">Käyttötiedot</string>
+    <string name="label_accept">Hyväksy</string>
+    <string name="label_agree">Hyväksy</string>
+    <string name="label_decline">Hylkää</string>
+    <string name="label_disagree">Älä hyväksy</string>
+    <string name="label_terms_and_conditions">Ehdot</string>
+    <string name="disclaimer_data_charges">Tämän palvelun käytöstä saatetaan veloittaa tiedonsiirtomaksuja palveluntarjoajan kanssa tekemäsi matkapuhelintilauksen mukaan.</string>
+    <string name="disclaimer_terms">Sovelluksen käyttöön sovelletaan sen &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;käyttöehtoja&lt;/a&gt;.</string>
+    <string name="disclaimer_terms_consent">Hyväksyn Sony Mobilen &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;käyttöehdot&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Hyväksyn Sony Mobilen &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;käyttöehdot&lt;/a&gt; ja &lt;a href=http://www.sonymobile.com/privacy&gt;tietosuojakäytännön&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Hyväksyn Sony Mobilen &lt;a href=http://www.sonymobile.com/privacy&gt;tietosuojakäytännön&lt;/a&gt;</string>
+</resources>

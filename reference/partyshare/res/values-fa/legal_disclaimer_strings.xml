@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">مجوزهای منبع باز</string>
+    <string name="title_disclaimer">اطلاعات مربوط به استفاده</string>
+    <string name="label_accept">پذیرش</string>
+    <string name="label_agree">موافق</string>
+    <string name="label_decline">عدم پذیرش</string>
+    <string name="label_disagree">مخالف</string>
+    <string name="label_terms_and_conditions">شرایط و مقررات</string>
+    <string name="disclaimer_data_charges">\"بسته به اشتراک تلفن همراه شما با شرکت مخابراتی، استفاده شما از این سرویس، هزینه های ترافیک داده را به همراه خواهد داشت.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;شرایط استفاده&lt;/a&gt; در مورد استفاده شما از برنامه، کاربرد دارد.</string>
+    <string name="disclaimer_terms_consent">من &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;شرایط استفاده&lt;/a&gt; Sony Mobile را می پذیرم</string>
+    <string name="disclaimer_terms_and_privacy_consent">من &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;شرایط استفاده&lt;/a&gt; و &lt;a href=http://www.sonymobile.com/privacy&gt;سیاست حریم خصوصی&lt;/a&gt; Sony Mobile را می پذیرم</string>
+    <string name="disclaimer_privacy_consent">من &lt;a href=http://www.sonymobile.com/privacy&gt;سیاست حریم خصوصی&lt;/a&gt; Sony Mobile را می پذیرم</string>
+</resources>

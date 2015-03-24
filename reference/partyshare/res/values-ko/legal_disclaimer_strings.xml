@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">오픈 소스 라이센스</string>
+    <string name="title_disclaimer">사용 정보</string>
+    <string name="label_accept">승인</string>
+    <string name="label_agree">동의</string>
+    <string name="label_decline">거부</string>
+    <string name="label_disagree">동의하지 않음</string>
+    <string name="label_terms_and_conditions">약관</string>
+    <string name="disclaimer_data_charges">본 서비스를 사용하면 귀하가 서비스 공급자와 맺은 휴대 전화 가입 내용에 따라 데이터 트래픽 비용이 청구될 수 있습니다.</string>
+    <string name="disclaimer_terms">본 &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;이용 약관&lt;/a&gt;은 애플리케이션 사용 시 적용됩니다.</string>
+    <string name="disclaimer_terms_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;이용 약관&lt;/a&gt;에 동의</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;이용 약관&lt;/a&gt; 및 &lt;a href=http://www.sonymobile.com/privacy&gt;개인 정보 보호 정책&lt;/a&gt;에 동의</string>
+    <string name="disclaimer_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;개인 정보 보호 정책&lt;/a&gt;에 동의</string>
+</resources>

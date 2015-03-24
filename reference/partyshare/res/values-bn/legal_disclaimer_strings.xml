@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">উৎস লাইসেন্স খুলুন</string>
+    <string name="title_disclaimer">ব্যবহার তথ্য</string>
+    <string name="label_accept">স্. ক.</string>
+    <string name="label_agree">সম্মত</string>
+    <string name="label_decline">প্রত্যাখ্যান</string>
+    <string name="label_disagree">অসম্মত</string>
+    <string name="label_terms_and_conditions">শর্তাদি</string>
+    <string name="disclaimer_data_charges">আপনার পরিষেবা প্রদানকারীর থেকে নেওয়া আপনার মোবাইল ফোন সাবস্ক্রিপশনের ভিত্তিতে এই পরিষেবা ব্যবহার করার কারণে ঘটা ডেটা স্থানান্তর বাবদ আপনাকে অর্থ দিতে হতে পারে৷</string>
+    <string name="disclaimer_terms">আপনার অ্যাপ্লিকেশনের ব্যবহারের ক্ষেত্রে &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ব্যবহারের শর্তাদি&lt;/a&gt; প্রযোজ্য হয়।</string>
+    <string name="disclaimer_terms_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ব্যবহারের শর্তাদি&lt;/a&gt;তে আমি সম্মতি জানাচ্ছি</string>
+    <string name="disclaimer_terms_and_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ব্যবহারের শর্তাদি&lt;/a&gt; এবং &lt;a href=http://www.sonymobile.com/privacy&gt;গোপনীয়তা নীতি&lt;/a&gt;তে আমি সম্মতি জানাচ্ছি</string>
+    <string name="disclaimer_privacy_consent">Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;গোপনীয়তা নীতি&lt;/a&gt;তে আমি সম্মতি জানাচ্ছি</string>
+</resources>

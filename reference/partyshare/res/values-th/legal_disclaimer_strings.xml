@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">สิทธิ์การใช้งานโอเพ่นซอร์ส</string>
+    <string name="title_disclaimer">ข้อมูลการใช้</string>
+    <string name="label_accept">ยอมรับ</string>
+    <string name="label_agree">เห็นด้วย</string>
+    <string name="label_decline">ปฏิเสธ</string>
+    <string name="label_disagree">ไม่เห็นด้วย</string>
+    <string name="label_terms_and_conditions">ข้อตกลงและเงื่อนไข</string>
+    <string name="disclaimer_data_charges">การใช้บริการนี้อาจมีค่าบริการของปริมาณการใช้ข้อมูล ทั้งนี้ขึ้นอยู่กับการสมัครใช้โทรศัพท์มือถือกับผู้ให้บริการของคุณ</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ข้อตกลงในการใช้&lt;/a&gt;นี้จะใช้บังคับกับการใช้แอปพลิเคชันนี้ของคุณ</string>
+    <string name="disclaimer_terms_consent">ข้าพเจ้ายินยอมตาม&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ข้อตกลงในการใช้&lt;/a&gt;ของ Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">ข้าพเจ้ายินยอมตาม&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ข้อตกลงในการใช้&lt;/a&gt;และ&lt;a href=http://www.sonymobile.com/privacy&gt;นโยบายความเป็นส่วนตัว&lt;/a&gt;ของ Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">ข้าพเจ้ายินยอมตาม&lt;a href=http://www.sonymobile.com/privacy&gt;นโยบายความเป็นส่วนตัว&lt;/a&gt;ของ Sony Mobile</string>
+</resources>

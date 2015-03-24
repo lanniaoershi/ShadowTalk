@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/party_share_strings_music_list_no_song_txt"
+        android:textAppearance="@style/MusicListMedium"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/partyshare_btn_height"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyle"
+            android:textSize="@dimen/partyshare_btn_txt_size"
+            android:text="@android:string/cancel"
+            android:layout_weight="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyle"
+            android:textSize="@dimen/partyshare_btn_txt_size"
+            android:text="@string/party_share_strings_add_song_button_txt"
+            android:layout_weight="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">يتم تشغيل WLAN</string>
+    <string name="party_share_strings_join_err_wifi_txt">تعذر الاتصال بـ WLAN</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">تم قطع اتصال WLAN. جارٍ إعادة الاتصال...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN متصلة</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">تعذر الاتصال بـ WLAN</string>
+    <string name="party_share_strings_wifi_failure_end_txt">تعذر الاتصال بشبكة WLAN. انتهت الحفلة.</string>
+    <string name="party_share_strings_wifi_off_err_txt">لا يمكن تشغيل WLAN</string>
+</resources>

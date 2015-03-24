@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Leyfi fyrir opinn hugbúnað</string>
+    <string name="title_disclaimer">Notkunarupplýsingar</string>
+    <string name="label_accept">Samþykkja</string>
+    <string name="label_agree">Samþykkja</string>
+    <string name="label_decline">Hafna</string>
+    <string name="label_disagree">Hafna</string>
+    <string name="label_terms_and_conditions">Skilmálar</string>
+    <string name="disclaimer_data_charges">\"Notkun þín á þjónustunni kann að kosta flutningsgjöld, allt eftir farsímaáskriftinni við þjónustuveituna.\"</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt; Notkunarskilmálarnir&lt;/a&gt; eiga við um notkun þína á forritinu.</string>
+    <string name="disclaimer_terms_consent">Ég samþykki\u0020 Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;notkunarskilmálana&lt;/a&gt;</string>
+    <string name="disclaimer_terms_and_privacy_consent">Ég samþykki Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;notkunarskilmálana&lt;/a&gt; og &lt;a href=http://www.sonymobile.com/privacy&gt;persónuverndarstefnuna&lt;/a&gt;</string>
+    <string name="disclaimer_privacy_consent">Ég samþykki Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;persónuverndarstefnuna&lt;/a&gt;</string>
+</resources>

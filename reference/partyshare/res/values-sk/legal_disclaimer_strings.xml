@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Licencie na otvorený softvér</string>
+    <string name="title_disclaimer">Informácie o používaní</string>
+    <string name="label_accept">Súhlasím</string>
+    <string name="label_agree">Súhlasím</string>
+    <string name="label_decline">Odmietnuť</string>
+    <string name="label_disagree">Nesúhlasím</string>
+    <string name="label_terms_and_conditions">Podmienky a požiadavky</string>
+    <string name="disclaimer_data_charges">Používanie tejto služby môže závisieť od poplatkov za prenos dát na základe objednávky služby v mobilnom telefóne u poskytovateľa sieťových služieb.</string>
+    <string name="disclaimer_terms">&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Podmienky používania&lt;/a&gt; sa vzťahujú na vaše používanie aplikácie.</string>
+    <string name="disclaimer_terms_consent">Súhlasím s &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;podmienkami používania&lt;/a&gt; spoločnosti Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Súhlasím s &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;podmienkami používania&lt;/a&gt; a &lt;a href=http://www.sonymobile.com/privacy&gt;zásadami ochrany osobných údajov&lt;/a&gt; spoločnosti Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Súhlasím so &lt;a href=http://www.sonymobile.com/privacy&gt;zásadami ochrany osobných údajov&lt;/a&gt; spoločnosti Sony Mobile</string>
+</resources>

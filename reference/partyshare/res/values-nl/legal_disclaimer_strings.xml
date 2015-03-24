@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">Open source-licenties</string>
+    <string name="title_disclaimer">Informatie over gebruik</string>
+    <string name="label_accept">Accepteren</string>
+    <string name="label_agree">Akkoord verklaren</string>
+    <string name="label_decline">Afwijzen</string>
+    <string name="label_disagree">Oneens</string>
+    <string name="label_terms_and_conditions">Voorwaarden</string>
+    <string name="disclaimer_data_charges">Voor het gebruik van deze service gelden mogelijk kosten voor gegevensverkeer afhankelijk van uw mobiele telefoonabonnement bij uw serviceprovider.</string>
+    <string name="disclaimer_terms">De &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Gebruiksvoorwaarden&lt;/a&gt; gelden voor uw gebruik van de toepassing.</string>
+    <string name="disclaimer_terms_consent">Ik ga akkoord met de &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Gebruiksvoorwaarden&lt;/a&gt; van Sony Mobile</string>
+    <string name="disclaimer_terms_and_privacy_consent">Ik ga akkoord met de &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;Gebruiksvoorwaarden&lt;/a&gt; en het &lt;a href=http://www.sonymobile.com/privacy&gt;Privacybeleid&lt;/a&gt; van Sony Mobile</string>
+    <string name="disclaimer_privacy_consent">Ik ga akkoord met het &lt;a href=http://www.sonymobile.com/privacy&gt;Privacybeleid&lt;/a&gt; van Sony Mobile</string>
+</resources>

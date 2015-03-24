@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+<string name="license_text">
+<![CDATA[
+<p>*** License for Apache2.0 ***</p>
+
+<br>
+
+<p>
+Copyright &#169 2007 The Android Open Source Project<br>
+Copyright &#169 2014 Sony Mobile Communications Inc. All rights reserved.<br>
+This file contains confidential and proprietary information of Sony Mobile
+Communications Inc.
+</p>
+
+<br>
+
+<p>
+Original code licensed under the Apache License, Version 2.0 (the "License");<br>
+you may not use this software except in compliance with the License.<br>
+You may obtain a copy of the License at
+</p>
+
+<p>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
+</p>
+
+<br>
+
+<p>
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</p>
+
+<br>
+
+<p>
+NOTE: This file has been modified by Sony Mobile Communications Inc.<br>
+Modifications are licensed under the Sony Mobile Communications Inc<br>
+End User License Agreement ("EULA"). Any use of the modifications is subject
+to the terms of the EULA.
+</p>
+
+<br>
+
+<p>
+NOTE: This license is used by the following files.<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/libs/android-support-v4.jar<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/res/drawable-nodpi/empty_photo.png<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/bitmapfun/ImageCache.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/bitmapfun/ImageResizer.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/bitmapfun/ImageWorker.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/bitmapfun/RecyclingBitmapDrawable.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/service/MusicService.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/ui/WifiConnectTask.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/util/AudioFocusHelper.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/util/IState.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/util/MusicFocusable.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/util/State.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/util/StateMachine.java
+</p>
+
+<br><br>
+
+<p>*** License for NanoHttpd ***</p>
+
+<br>
+
+<p>
+Copyright &#169 2001 Jarno Elonen<br>
+Copyright &#169 2010 Konstantinos Togias<br>
+Copyright &#169 2012 Paul S. Hawke<br>
+Copyright &#169 2014 Sony Mobile Communications Inc.<br>
+All rights reserved.
+</p>
+
+<br>
+
+<p>
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+</p>
+
+<br>
+
+<p>
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.<br>
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.<br>
+- Neither the name of the NanoHttpd organization nor the names of its
+  contributors may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+</p>
+
+<br><br>
+
+<p>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+</p>
+
+<br>
+
+<p>
+NOTE: This license is used by the following files.<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/httpd/NanoHTTPD.java<br>
+<span>&nbsp;&nbsp;</span>
+PartyShare/src/com/sonymobile/partyshare/httpd/PartyShareHttpd.java
+</p>
+]]>
+</string>
+</resources>

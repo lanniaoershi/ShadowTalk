@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources>
+    <!-- Play Store URL -->
+    <string name="url" translatable="false">https://play.google.com/store/apps/details?id=com.sonymobile.partyshare</string>
+
+    <!-- Max user name length -->
+    <integer name="max_user_name_length">40</integer>
+
+    <!-- Max party name length -->
+    <integer name="max_party_name_length">60</integer>
+</resources>

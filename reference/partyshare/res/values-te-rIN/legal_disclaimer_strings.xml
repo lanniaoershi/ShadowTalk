@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">వనరు లైసెన్సులను తెరవండి</string>
+    <string name="title_disclaimer">వాడుక సమాచారం</string>
+    <string name="label_accept">అంగీకరించు</string>
+    <string name="label_agree">అంగీకరించు</string>
+    <string name="label_decline">తిరస్కరించడం</string>
+    <string name="label_disagree">అసమ్మతి</string>
+    <string name="label_terms_and_conditions">నిబంధనలు మరియు షరతులను</string>
+    <string name="disclaimer_data_charges">ఈ సర్వీసు యొక్క ఉపయోగం మీ మొబైల్ ఫోను సబ్‌స్క్రిప్షన్‌పై ఆధారపడి మీ సర్వీసు ప్రొవైడర్‌తో డేటా ట్రాఫిక్\u0020 ఛార్జ్ చెయ్యబడవచ్చు.</string>
+    <string name="disclaimer_terms">మీ అప్లికేషన్ యొక్క ఉపయోగంకు వర్తించే&lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ఉపయోగ నిబంధనలు&lt;/a&gt; .</string>
+    <string name="disclaimer_terms_consent">నేను Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ఉపయోగ నిబంధనలు&lt;/a&gt;కు అనుమతిస్తాను</string>
+    <string name="disclaimer_terms_and_privacy_consent">నేను Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;ఉపయోగ నిబంధనలు&lt;/a&gt; మరియు &lt;a href=http://www.sonymobile.com/privacy&gt;గోప్యత విధానం&lt;/a&gt;కు అనుమతిస్తాను</string>
+    <string name="disclaimer_privacy_consent">నేను Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;గోప్యత విధానం&lt;/a&gt;కు అనుమతిస్తాను</string>
+</resources>

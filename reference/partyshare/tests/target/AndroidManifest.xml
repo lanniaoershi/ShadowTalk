@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sonymobile.partyshare.tests">
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.sonymobile.partyshare"
+        android:label="PartyShare app All Tests" />
+    <instrumentation
+        android:name="com.sonymobile.partyshare.runners.UnitTestRunner"
+        android:targetPackage="com.sonymobile.partyshare"
+        android:label="PartyShare app UnitTests">
+    </instrumentation>
+</manifest>

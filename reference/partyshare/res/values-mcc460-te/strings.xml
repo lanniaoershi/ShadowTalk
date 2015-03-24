@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">WLAN ఆన్ చేయబడుతోంది…</string>
+    <string name="party_share_strings_join_err_wifi_txt">WLAN అల్ప సామర్థ్య స్థితిలో ఇంటర్నెట్ కనెక్షన్‌ను కలిగి</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN డిస్‌కనెక్ట్ అయ్యింది. రీకనెక్ట్ చేస్తోంది...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN కనెక్ట్ చేయబడింది</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">WLAN అల్ప సామర్థ్య స్థితిలో ఇంటర్నెట్ కనెక్షన్‌ను కలిగి</string>
+    <string name="party_share_strings_wifi_failure_end_txt">WLANకు కనెక్ట్ చేయలేరు. పార్టీ ముగిసింది.</string>
+    <string name="party_share_strings_wifi_off_err_txt">WLANను ఆన్ చేయలేరు</string>
+</resources>

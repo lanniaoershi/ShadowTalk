@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="party_share_strings_wifi_on_txt">A ligar WLAN...</string>
+    <string name="party_share_strings_join_err_wifi_txt">Não foi possível ligar a WLAN</string>
+    <string name="party_share_strings_wifi_disconnection_err_txt">WLAN desligado. A ligar novamente...</string>
+    <string name="party_share_strings_wifi_success_txt">WLAN ligado</string>
+    <string name="party_share_strings_wifi_failure_leave_txt">Não foi possível ligar a WLAN</string>
+    <string name="party_share_strings_wifi_failure_end_txt">Não foi possível ligar o WLAN. A festa terminou.</string>
+    <string name="party_share_strings_wifi_off_err_txt">Não é possível ativar o WLAN</string>
+</resources>

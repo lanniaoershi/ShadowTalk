@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2014 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<!-- sessionID = a3lc1c-sk2vfw-hdfjde44-1-hdzvtg38-40b -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_open_source_label">ஓப்பன் சோர்ஸ் உரிமங்கள்</string>
+    <string name="title_disclaimer">பயன்பாட்டு தகவல்</string>
+    <string name="label_accept">ஏற்றுக்கொள்</string>
+    <string name="label_agree">ஏற்கிறேன்</string>
+    <string name="label_decline">மறுத்துவிடு</string>
+    <string name="label_disagree">மறுக்கிறேன்</string>
+    <string name="label_terms_and_conditions">விதிமுறைகள் மற்றும் நிபந்தனைகள்</string>
+    <string name="disclaimer_data_charges">இந்த சேவைக்கான உங்கள் பயன்பாடானது உங்கள் சேவை வழங்குநருடனான உங்கள் மொபைல் ஃபோன் சந்தாவினைச் சார்ந்துள்ள தரவு போக்குவரத்துக் கட்டணங்களுக்கு உட்படலாம்.</string>
+    <string name="disclaimer_terms">பயன்பாட்டின் உங்கள் பயன்பாடானது &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;பயன்பாட்டு விதிமுறைகளுக்குப்&lt;/a&gt; பொருந்துகிறது.</string>
+    <string name="disclaimer_terms_consent">நான் Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;பயன்பாட்டு விதிமுறைகளுக்கு&lt;/a&gt; இணங்குகிறேன்</string>
+    <string name="disclaimer_terms_and_privacy_consent">நான் Sony Mobile &lt;a href=http://www.sonymobile.com/terms-of-use-applications&gt;பயன்பாட்டு விதிமுறைகள்&lt;/a&gt; மற்றும் &lt;a href=http://www.sonymobile.com/privacy&gt;தனியுரிமை கொள்கை&lt;/a&gt; ஆகியவற்றுக்கு இணங்குகிறேன்</string>
+    <string name="disclaimer_privacy_consent">நான் Sony Mobile &lt;a href=http://www.sonymobile.com/privacy&gt;தனியுரிமை கொள்கைக்கு&lt;/a&gt; இணங்குகிறேன்</string>
+</resources>
