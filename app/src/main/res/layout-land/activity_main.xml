@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
 
         <fragment
@@ -27,7 +27,7 @@
             android:id="@+id/frag_detail"
             class="com.specialdark.utopia.shadowtalk.wifi.DeviceDetailFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="300dp" />
         <!--tools:layout="@layout/device_detail" -->
 
     </LinearLayout>
