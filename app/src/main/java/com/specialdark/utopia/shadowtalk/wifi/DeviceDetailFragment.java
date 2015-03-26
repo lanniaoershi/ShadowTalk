@@ -86,17 +86,19 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Uri uri = data.getData();
-        TextView statusText = (TextView) mContentView.findViewById(R.id.status_text);
-        statusText.setText("Sending " + uri);
+        if (data != null) {
+            Uri uri = data.getData();
+            TextView statusText = (TextView) mContentView.findViewById(R.id.status_text);
+            statusText.setText("Sending " + uri);
 
-        Intent serviceIntent = new Intent(getActivity(), FileTransferService.class);
-        serviceIntent.setAction(FileTransferService.ACTION_SEND_FILE);
-        serviceIntent.putExtra(FileTransferService.EXTRA_FILE_PTAH, uri.toString());
-        serviceIntent.putExtra(FileTransferService.EXTRA_GROUP_OWNER_ADDRESS, mInfo.groupOwnerAddress.getHostAddress());
-        serviceIntent.putExtra(FileTransferService.EXTRA_GROUP_OWNER_PORT, 8988);
+            Intent serviceIntent = new Intent(getActivity(), FileTransferService.class);
+            serviceIntent.setAction(FileTransferService.ACTION_SEND_FILE);
+            serviceIntent.putExtra(FileTransferService.EXTRA_FILE_PTAH, uri.toString());
+            serviceIntent.putExtra(FileTransferService.EXTRA_GROUP_OWNER_ADDRESS, mInfo.groupOwnerAddress.getHostAddress());
+            serviceIntent.putExtra(FileTransferService.EXTRA_GROUP_OWNER_PORT, 8988);
 
-        getActivity().startService(serviceIntent);
+            getActivity().startService(serviceIntent);
+        }
     }
 
     @Override
@@ -112,7 +114,7 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
                 + ((info.isGroupOwner == true) ? getResources().getString(R.string.yes) : getResources().getString(R.string.no)));
 
         view = (TextView) mContentView.findViewById(R.id.device_info);
-        view.setText("Group Owner IP: "+info.groupOwnerAddress.getHostAddress());
+        view.setText("Group Owner IP: " + info.groupOwnerAddress.getHostAddress());
 
         if (info.groupFormed && info.isGroupOwner) {
             new FileServerAsyncTask(getActivity(), mContentView.findViewById(R.id.status_text)).execute();
@@ -123,12 +125,9 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         mContentView.findViewById(R.id.btn_connect).setVisibility(View.GONE);
     }
 
-    public  void resetViews() {
+    public void resetViews() {
         mContentView.findViewById(R.id.btn_connect).setVisibility(View.VISIBLE);
-        TextView view = (TextView) mContentView.findViewById(R.id.device_address);
-        view.setText(R.string.empty);
-
-        view = (TextView) mContentView.findViewById(R.id.device_info);
+        TextView view = (TextView) mContentView.findViewById(R.id.device_info);
         view.setText(R.string.empty);
 
         view = (TextView) mContentView.findViewById(R.id.group_owner);
@@ -140,13 +139,11 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         mContentView.findViewById(R.id.btn_start_client).setVisibility(View.GONE);
         this.getView().setVisibility(View.GONE);
     }
+
     public void showDeviceDetail(WifiP2pDevice device) {
         mDevice = device;
         this.getView().setVisibility(View.VISIBLE);
-        TextView view = (TextView) mContentView.findViewById(R.id.device_address);
-        view.setText(device.deviceAddress);
-
-        view = (TextView) mContentView.findViewById(R.id.device_info);
+        TextView view = (TextView) mContentView.findViewById(R.id.device_info);
         view.setText(device.toString());
 
     }
@@ -161,13 +158,14 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
             this.context = context;
             this.statusText = (TextView) statusText;
         }
+
         @Override
         protected String doInBackground(Void... params) {
             try {
                 ServerSocket serverSocket = new ServerSocket(8988);
                 Socket client = serverSocket.accept();
                 final File file = new File(Environment.getExternalStorageDirectory() + "/"
-                        + context.getPackageName() + "/wifiP2pShare:" + System.currentTimeMillis() +".jpg");
+                        + context.getPackageName() + "/wifiP2pShare:" + System.currentTimeMillis() + ".jpg");
 
                 File dirs = new File(file.getParent());
                 if (!dirs.exists())
@@ -211,7 +209,7 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
             }
             outputStream.close();
             inputStream.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return true;

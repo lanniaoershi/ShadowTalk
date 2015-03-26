@@ -19,7 +19,8 @@
             android:id="@+id/frag_list"
             class="com.specialdark.utopia.shadowtalk.wifi.DeviceListFragment"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="200dp"
+            tools:layout="@layout/device_list" />
         <!--tools:layout="@layout/row_devices"-->
 
 
@@ -27,7 +28,8 @@
             android:id="@+id/frag_detail"
             class="com.specialdark.utopia.shadowtalk.wifi.DeviceDetailFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:layout="@layout/device_detail" />
         <!--tools:layout="@layout/device_detail" -->
 
     </LinearLayout>
