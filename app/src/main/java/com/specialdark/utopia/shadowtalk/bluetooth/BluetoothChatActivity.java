@@ -22,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.specialdark.utopia.shadowtalk.R;
+import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
 
 
 public class BluetoothChatActivity extends Activity {
@@ -42,17 +43,19 @@ public class BluetoothChatActivity extends Activity {
     private static final int REQUEST_CONNECT_DEVICE_INSECURE = 2;
     private static final int REQUEST_ENABLE_BT = 3;
 
-    private ListView mConversationView;
     private EditText mOutEditText;
-    private Button mSendButton;
 
     private String mConnectedDeviceName = null;
-    // Array adapter for the comversation thread
+
+    // Array adapter for the conversation thread
     private ArrayAdapter<String> mConversationArrayAdapter;
-    // String buffer for outgoing messages
-    private StringBuffer mOutStringBuffer;
+
+    // String buffer for outgoing messages ???
+//    private StringBuffer mOutStringBuffer;
+
     // Local bluetooth Adapter
     private BluetoothAdapter mBluetoothAdapter = null;
+
     // Member obj for the chat services
     private BluetoothChatService mChatService = null;
 
@@ -62,24 +65,25 @@ public class BluetoothChatActivity extends Activity {
         setContentView(R.layout.activity_bluetooth_chat);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (mBluetoothAdapter == null) {
-            Toast.makeText(this, "Bluetooth is not available", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Device does not support Bluetooth", Toast.LENGTH_LONG).show();
             finish();
-            return;
-        }
+        } else
+            ShadowTalkLog.i("Device supported Bluetooth");
     }
 
     @Override
     public void onStart() {
         super.onStart();
 
-        // If BT is not on, request that it be enabled.
+        // If BT is not on, request it to be enabled.
         // setupChat() will then be called during onActivityResult
         if (!mBluetoothAdapter.isEnabled()) {
             Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
             // Otherwise, setup the chat session
         } else {
-            if (mChatService == null) setupChat();
+            if (mChatService == null)
+                initialChat();
         }
     }
 
@@ -100,26 +104,27 @@ public class BluetoothChatActivity extends Activity {
         }
     }
 
-    private void setupChat() {
+    private void initialChat() {
 
 
         // Initialize the array adapter for the conversation thread
         mConversationArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
-        mConversationView = (ListView) findViewById(R.id.in);
-        mConversationView.setAdapter(mConversationArrayAdapter);
+        ListView mConversationListView = (ListView) findViewById(R.id.message_list);
+        mConversationListView.setAdapter(mConversationArrayAdapter);
 
         // Initialize the compose field with a listener for the return key
+        // considering no need to do this...
         mOutEditText = (EditText) findViewById(R.id.edit_text_out);
         mOutEditText.setOnEditorActionListener(mWriteListener);
 
         // Initialize the send button with a listener that for click events
-        mSendButton = (Button) findViewById(R.id.button_send);
+        Button mSendButton = (Button) findViewById(R.id.button_send);
         mSendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Send a message using content of the edit text widget
                 TextView view = (TextView) findViewById(R.id.edit_text_out);
                 String message = view.getText().toString();
-                sendMessage(message);
+                sendChatMessage(message);
             }
         });
 
@@ -127,9 +132,8 @@ public class BluetoothChatActivity extends Activity {
         mChatService = new BluetoothChatService(this, mHandler);
 
         // Initialize the buffer for outgoing messages
-        mOutStringBuffer = new StringBuffer("");
+//        mOutStringBuffer = new StringBuffer("");
     }
-
 
 
     @Override
@@ -163,15 +167,12 @@ public class BluetoothChatActivity extends Activity {
     }
 
 
-
-
-
-
     /**
      * Sends a message.
-     * @param message  A string of text to send.
+     *
+     * @param message A string of text to send.
      */
-    private void sendMessage(String message) {
+    private void sendChatMessage(String message) {
         // Check that we're actually connected before trying anything
         if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
             Toast.makeText(this, R.string.not_connected, Toast.LENGTH_SHORT).show();
@@ -185,8 +186,8 @@ public class BluetoothChatActivity extends Activity {
             mChatService.write(send);
 
             // Reset out string buffer to zero and clear the edit text field
-            mOutStringBuffer.setLength(0);
-            mOutEditText.setText(mOutStringBuffer);
+//            mOutStringBuffer.setLength(0);
+            mOutEditText.setText("");
         }
     }
 
@@ -197,21 +198,25 @@ public class BluetoothChatActivity extends Activity {
                     // If the action is a key-up event on the return key, send the message
                     if (actionId == EditorInfo.IME_NULL && event.getAction() == KeyEvent.ACTION_UP) {
                         String message = view.getText().toString();
-                        sendMessage(message);
+                        sendChatMessage(message);
                     }
 
                     return true;
                 }
             };
 
-    private final void setStatus(int resId) {
+    private void setStatus(int resId) {
         final ActionBar actionBar = getActionBar();
-        actionBar.setSubtitle(resId);
+        if (actionBar != null) {
+            actionBar.setSubtitle(resId);
+        }
     }
 
-    private final void setStatus(CharSequence subTitle) {
+    private void setStatus(CharSequence subTitle) {
         final ActionBar actionBar = getActionBar();
-        actionBar.setSubtitle(subTitle);
+        if (actionBar != null) {
+            actionBar.setSubtitle(subTitle);
+        }
     }
 
     // The Handler that gets information back from the BluetoothChatService
@@ -245,7 +250,7 @@ public class BluetoothChatActivity extends Activity {
                     byte[] readBuf = (byte[]) msg.obj;
                     // construct a string from the valid bytes in the buffer
                     String readMessage = new String(readBuf, 0, msg.arg1);
-                    mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage);
+                    mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
                     break;
                 case MESSAGE_DEVICE_NAME:
                     // save the connected device's name
@@ -280,10 +285,9 @@ public class BluetoothChatActivity extends Activity {
                 // When the request to enable Bluetooth returns
                 if (resultCode == Activity.RESULT_OK) {
                     // Bluetooth is now enabled, so set up a chat session
-                    setupChat();
+                    initialChat();
                 } else {
                     // User did not enable Bluetooth or an error occurred
-
                     Toast.makeText(this, R.string.bt_not_enabled_leaving, Toast.LENGTH_SHORT).show();
                     finish();
                 }
@@ -309,7 +313,7 @@ public class BluetoothChatActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent serverIntent = null;
+        Intent serverIntent;
         switch (item.getItemId()) {
             case R.id.secure_connect_scan:
                 // Launch the DeviceListActivity to see devices and do scan

@@ -3,11 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+    <ProgressBar
+        android:id="@+id/search_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
     <TextView android:id="@+id/title_paired_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_paired_devices"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="#666"
         android:textColor="#fff"
         android:paddingLeft="5dp"
@@ -15,14 +23,14 @@
     <ListView android:id="@+id/paired_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stackFromBottom="true"
+        android:stackFromBottom="false"
         android:layout_weight="1"
         />
     <TextView android:id="@+id/title_new_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_other_devices"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="#666"
         android:textColor="#fff"
         android:paddingLeft="5dp"
@@ -30,9 +38,15 @@
     <ListView android:id="@+id/new_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stackFromBottom="true"
-        android:layout_weight="2"
+        android:stackFromBottom="false"
+        android:layout_weight="1"
         />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper" />
+
     <Button android:id="@+id/button_scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
