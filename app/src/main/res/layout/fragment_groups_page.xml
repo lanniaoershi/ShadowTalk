@@ -13,10 +13,10 @@
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="friends page"/>
+        android:text="groups page"/>
 
     <ListView
-        android:id="@+id/list_view_friends"
+        android:id="@+id/list_view_groups"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
