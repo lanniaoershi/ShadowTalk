@@ -18,4 +18,4 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
-<!-- From: file:/F:/AndroidApplicationSourceCode/EffectiveNavigation/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/home/weiwei/Desktop/ShadowTalk/reference/EffectiveNavigation/app/src/main/res/layout/activity_main.xml -->

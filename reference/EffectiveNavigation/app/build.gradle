@@ -5,8 +5,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.android.effectivenavigation"
-        minSdkVersion 14
-        targetSdkVersion 14
+        minSdkVersion 19
+        targetSdkVersion 21
     }
 
     buildTypes {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/AndroidApplicationSourceCode/EffectiveNavigation/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/weiwei/Desktop/ShadowTalk/reference/EffectiveNavigation/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Effective Navigation</string>
     <string name="demo_collection">Demo Collection</string>
