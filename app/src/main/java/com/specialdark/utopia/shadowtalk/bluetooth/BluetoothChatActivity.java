@@ -69,6 +69,12 @@ public class BluetoothChatActivity extends Activity {
             finish();
         } else
             ShadowTalkLog.i("Device supported Bluetooth");
+
+        Intent intent = getIntent();
+        if (intent != null) {
+            String title = intent.getStringExtra("NAME");
+            getActionBar().setTitle(title);
+        }
     }
 
     @Override

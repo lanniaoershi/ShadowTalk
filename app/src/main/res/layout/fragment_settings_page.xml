@@ -9,12 +9,26 @@
               android:paddingTop="@dimen/activity_vertical_margin"
               tools:context="com.specialdark.utopia.shadowtalk.ShadowTalkActivity$PlaceholderFragment">
 
+
     <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="settings page"/>
+        android:text="Bluetooth"
+        android:id="@+id/switch_bluetooth"
+        android:padding="10dp"
+        android:textOff="Bluetooth off..."
+        android:textOn="Bluetooth on..."/>
 
-
-
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wi-Fi"
+        android:id="@+id/switch_wifi"
+        android:padding="10dp"/>
 </LinearLayout>

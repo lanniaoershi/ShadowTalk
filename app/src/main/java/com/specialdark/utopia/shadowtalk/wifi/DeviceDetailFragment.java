@@ -20,14 +20,11 @@ import android.widget.TextView;
 
 import com.specialdark.utopia.shadowtalk.R;
 
-import org.apache.http.client.protocol.ClientContextConfigurer;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.math.MathContext;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -49,7 +46,7 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mContentView = inflater.inflate(R.layout.device_detail, null);
+        mContentView = inflater.inflate(R.layout.fragment_wifi_device_detail, null);
         mContentView.findViewById(R.id.btn_connect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

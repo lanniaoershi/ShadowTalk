@@ -7,32 +7,35 @@ import java.util.Locale;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.specialdark.utopia.shadowtalk.bluetooth.BluetoothStateChangeReceiver;
 import com.specialdark.utopia.shadowtalk.bluetooth.util.GetBondedBluetoothDevices;
 import com.specialdark.utopia.shadowtalk.constant.ShadowTalkConstant;
 
 public class ShadowTalkActivity extends Activity {
 
 
-    private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    private static BluetoothAdapter mBluetoothAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,7 @@ public class ShadowTalkActivity extends Activity {
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
+        SectionsPagerAdapter mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
@@ -58,6 +61,35 @@ public class ShadowTalkActivity extends Activity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (!mBluetoothAdapter.isEnabled()) {
+            // change bluetooth icon or sth
+            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableIntent, ShadowTalkConstant.REQUEST_ENABLE_BT);
+        }
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case ShadowTalkConstant.REQUEST_ENABLE_BT:
+                // When the request to enable Bluetooth returns
+                if (resultCode == Activity.RESULT_OK) {
+                    // change bluetooth icon or sth
+
+                } else {
+                    // User did not enable Bluetooth or an error occurred
+                    Toast.makeText(this, R.string.bt_not_enabled_retry_on_settings, Toast.LENGTH_SHORT).show();
+                    // finish();
+                }
+        }
+    }
+
     public class BottomBtnOnClickListener implements View.OnClickListener {
 
         private int index = 0;
@@ -69,6 +101,7 @@ public class ShadowTalkActivity extends Activity {
         @Override
         public void onClick(View v) {
 
+            mViewPager.setCurrentItem(index);
             mViewPager.setCurrentItem(index);
 
         }
@@ -163,6 +196,11 @@ public class ShadowTalkActivity extends Activity {
                 return position;
             }
 
+            public String getNameByPosition(int position) {
+                return friendsList.get(position);
+            }
+
+
 
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
@@ -188,19 +226,21 @@ public class ShadowTalkActivity extends Activity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_friends_page, container, false);
             ListView pairedFriendsListView = (ListView) rootView.findViewById(R.id.list_view_friends);
+            final FriendsAdapter pairedDevicesArrayAdapter = new FriendsAdapter(getActivity(), GetBondedBluetoothDevices.getPairedDevicesList());
+            pairedFriendsListView.setAdapter(pairedDevicesArrayAdapter);
 
             pairedFriendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                     Intent intent = new Intent(ShadowTalkConstant.ACTION_BLUETOOTH_CHAT_ACTIVITY);
+                    intent.putExtra("NAME", pairedDevicesArrayAdapter.getNameByPosition(position));
                     startActivity(intent);
 
                 }
             });
 
-            FriendsAdapter pairedDevicesArrayAdapter = new FriendsAdapter(getActivity(), GetBondedBluetoothDevices.getPairedDevicesList());
-            pairedFriendsListView.setAdapter(pairedDevicesArrayAdapter);
+
 
             return rootView;
         }
@@ -262,6 +302,30 @@ public class ShadowTalkActivity extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_settings_page, container, false);
+            Switch wifiSwitch = (Switch) rootView.findViewById(R.id.switch_wifi);
+            Switch bluetoothSwitch = (Switch) rootView.findViewById(R.id.switch_bluetooth);
+            bluetoothSwitch.setChecked(mBluetoothAdapter.isEnabled());
+
+//            BluetoothStateChangeReceiver bluetoothStateChangeReceiver = new BluetoothStateChangeReceiver();
+//            IntentFilter intentFilter = new IntentFilter();
+//            intentFilter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
+//            getActivity().registerReceiver(bluetoothStateChangeReceiver,intentFilter);
+
+
+
+
+            bluetoothSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        mBluetoothAdapter.enable();
+                    } else
+                        mBluetoothAdapter.disable();
+
+                }
+            });
+
+
             return rootView;
         }
     }

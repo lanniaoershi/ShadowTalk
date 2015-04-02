@@ -23,6 +23,7 @@
     <string name="send">Send</string>
     <string name="not_connected">You are not connected to a device</string>
     <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving ShadowTalk</string>
+    <string name="bt_not_enabled_retry_on_settings">Bluetooth was not enabled. You can enable it in "Settings" page.</string>
     <string name="title_connecting">connecting...</string>
     <string name="title_connected_to">connected to </string>
     <string name="title_not_connected">not connected</string>

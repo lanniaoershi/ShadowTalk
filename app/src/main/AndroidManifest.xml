@@ -31,7 +31,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -43,7 +43,8 @@
             android:name=".bluetooth.BluetoothChatActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_bluetooth_chat"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="com.specialdark.utopia.shadowtalk.BLUETOOTH_CHAT" />
 
@@ -59,13 +60,20 @@
         <activity
             android:name=".ShadowTalkActivity"
             android:label="@string/title_activity_shadow_talk"
-            android:theme="@style/ShadowTalkActivityTheme">
+            android:screenOrientation="portrait"
+            android:theme="@style/ShadowTalkActivityTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".bluetooth.BluetoothStateChangeReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
     </application>
 
 </manifest>
