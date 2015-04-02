@@ -108,6 +108,8 @@ public class BluetoothChatActivity extends Activity {
                 mChatService.start();
             }
         }
+//        Intent intent = getIntent();
+//        connectDevice(intent, true);
     }
 
     private void initialChat() {

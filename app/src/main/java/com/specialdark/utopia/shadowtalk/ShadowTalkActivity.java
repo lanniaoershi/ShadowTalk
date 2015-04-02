@@ -30,6 +30,7 @@ import android.widget.Toast;
 import com.specialdark.utopia.shadowtalk.bluetooth.BluetoothStateChangeReceiver;
 import com.specialdark.utopia.shadowtalk.bluetooth.util.GetBondedBluetoothDevices;
 import com.specialdark.utopia.shadowtalk.constant.ShadowTalkConstant;
+import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
 
 public class ShadowTalkActivity extends Activity {
 
@@ -226,7 +227,7 @@ public class ShadowTalkActivity extends Activity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_friends_page, container, false);
             ListView pairedFriendsListView = (ListView) rootView.findViewById(R.id.list_view_friends);
-            final FriendsAdapter pairedDevicesArrayAdapter = new FriendsAdapter(getActivity(), GetBondedBluetoothDevices.getPairedDevicesList());
+            final FriendsAdapter pairedDevicesArrayAdapter = new FriendsAdapter(getActivity(), GetBondedBluetoothDevices.getPairedDevicesListName());
             pairedFriendsListView.setAdapter(pairedDevicesArrayAdapter);
 
             pairedFriendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -235,6 +236,10 @@ public class ShadowTalkActivity extends Activity {
 
                     Intent intent = new Intent(ShadowTalkConstant.ACTION_BLUETOOTH_CHAT_ACTIVITY);
                     intent.putExtra("NAME", pairedDevicesArrayAdapter.getNameByPosition(position));
+                    List<String> listAddress = GetBondedBluetoothDevices.getPairedDevicesListAddress();
+                    String address = listAddress.get(position);
+                    intent.putExtra("device_address", address);
+                    getActivity().setResult(Activity.RESULT_OK, intent);
                     startActivity(intent);
 
                 }
