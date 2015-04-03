@@ -22,7 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.specialdark.utopia.shadowtalk.R;
-import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
+import com.specialdark.utopia.shadowtalk.ShadowTalkActivity;
 
 
 public class BluetoothChatActivity extends Activity {
@@ -63,12 +63,17 @@ public class BluetoothChatActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bluetooth_chat);
+
+        if (getActionBar() != null) {
+            getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
         if (mBluetoothAdapter == null) {
             Toast.makeText(this, "Device does not support Bluetooth", Toast.LENGTH_LONG).show();
             finish();
-        } else
-            ShadowTalkLog.i("Device supported Bluetooth");
+        }
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -81,22 +86,14 @@ public class BluetoothChatActivity extends Activity {
     public void onStart() {
         super.onStart();
 
-        // If BT is not on, request it to be enabled.
-        // setupChat() will then be called during onActivityResult
-        if (!mBluetoothAdapter.isEnabled()) {
-            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
-            // Otherwise, setup the chat session
-        } else {
-            if (mChatService == null)
-                initialChat();
-        }
+        if (mChatService == null)
+            initialChat();
+
     }
 
     @Override
     public synchronized void onResume() {
         super.onResume();
-
 
         // Performing this check in onResume() covers the case in which BT was
         // not enabled during onStart(), so we were paused to enable it...
@@ -108,6 +105,7 @@ public class BluetoothChatActivity extends Activity {
                 mChatService.start();
             }
         }
+
 //        Intent intent = getIntent();
 //        connectDevice(intent, true);
     }
@@ -116,7 +114,7 @@ public class BluetoothChatActivity extends Activity {
 
 
         // Initialize the array adapter for the conversation thread
-        mConversationArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
+        mConversationArrayAdapter = new ArrayAdapter<>(this, R.layout.single_message);
         ListView mConversationListView = (ListView) findViewById(R.id.message_list);
         mConversationListView.setAdapter(mConversationArrayAdapter);
 
@@ -160,7 +158,8 @@ public class BluetoothChatActivity extends Activity {
     public void onDestroy() {
         super.onDestroy();
         // Stop the Bluetooth chat services
-        if (mChatService != null) mChatService.stop();
+        if (mChatService != null)
+            mChatService.stop();
 
     }
 
@@ -178,9 +177,9 @@ public class BluetoothChatActivity extends Activity {
     /**
      * Sends a message.
      *
-     * @param message A string of text to send.
+     * @param textMessage A string of text to send.
      */
-    private void sendChatMessage(String message) {
+    private void sendChatMessage(String textMessage) {
         // Check that we're actually connected before trying anything
         if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
             Toast.makeText(this, R.string.not_connected, Toast.LENGTH_SHORT).show();
@@ -188,9 +187,9 @@ public class BluetoothChatActivity extends Activity {
         }
 
         // Check that there's actually something to send
-        if (message.length() > 0) {
+        if (textMessage.length() > 0) {
             // Get the message bytes and tell the BluetoothChatService to write
-            byte[] send = message.getBytes();
+            byte[] send = textMessage.getBytes();
             mChatService.write(send);
 
             // Reset out string buffer to zero and clear the edit text field
@@ -336,6 +335,9 @@ public class BluetoothChatActivity extends Activity {
             case R.id.discoverable:
                 // Ensure this device is discoverable by others
                 ensureDiscoverable();
+                return true;
+            case android.R.id.home:
+                navigateUpTo(new Intent(BluetoothChatActivity.this, ShadowTalkActivity.class));
                 return true;
         }
         return false;

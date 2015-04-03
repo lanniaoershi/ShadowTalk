@@ -17,14 +17,13 @@ public class GetBondedBluetoothDevices {
 
     private static BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-    private static  Set<BluetoothDevice> pairedDevices;
+    private static Set<BluetoothDevice> pairedDevices;
 
     public static List<String> getPairedDevicesListName() {
         ArrayList<String> list = new ArrayList<>();
         pairedDevices = mBluetoothAdapter.getBondedDevices();
 
         if (pairedDevices.size() > 0) {
-            ShadowTalkLog.i("pairedDevices = "+pairedDevices.size());
             for (BluetoothDevice device : pairedDevices) {
                 list.add(device.getName());
             }
@@ -40,7 +39,6 @@ public class GetBondedBluetoothDevices {
         pairedDevices = mBluetoothAdapter.getBondedDevices();
 
         if (pairedDevices.size() > 0) {
-            ShadowTalkLog.i("pairedDevices = "+pairedDevices.size());
             for (BluetoothDevice device : pairedDevices) {
                 list.add(device.getAddress());
             }
@@ -49,5 +47,11 @@ public class GetBondedBluetoothDevices {
             list.add("No Address found");
         }
         return list;
+    }
+
+    public static boolean setMyNickName(String name) {
+
+        return mBluetoothAdapter.setName(name);
+
     }
 }

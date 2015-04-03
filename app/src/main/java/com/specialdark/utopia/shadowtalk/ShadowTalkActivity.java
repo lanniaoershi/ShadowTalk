@@ -103,7 +103,6 @@ public class ShadowTalkActivity extends Activity {
         public void onClick(View v) {
 
             mViewPager.setCurrentItem(index);
-            mViewPager.setCurrentItem(index);
 
         }
     }
@@ -202,7 +201,6 @@ public class ShadowTalkActivity extends Activity {
             }
 
 
-
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -244,7 +242,6 @@ public class ShadowTalkActivity extends Activity {
 
                 }
             });
-
 
 
             return rootView;
@@ -315,8 +312,6 @@ public class ShadowTalkActivity extends Activity {
 //            IntentFilter intentFilter = new IntentFilter();
 //            intentFilter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
 //            getActivity().registerReceiver(bluetoothStateChangeReceiver,intentFilter);
-
-
 
 
             bluetoothSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
+import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -23,7 +25,7 @@ public class BluetoothChatService {
 
     //Name for the SDP record when creating server socket.
     private static final String NAME_SECURE = "BluetoothChatSecure";
-    private static final String NAME_INSECURE = "BluetoothInsecure";
+    private static final String NAME_INSECURE = "BluetoothChatInsecure";
 
     //Unique UUID for this application
     private static final UUID MY_UUID_SECURE = UUID.fromString("fa87c0d0-afac-11de-8a39-0800200c9a66");
@@ -106,7 +108,7 @@ public class BluetoothChatService {
             }
         }
 
-        // Cancel any thread currently running a connection
+        // Cancel any thread currently running(holding) a connection
         if (mConnectedThread != null) {
             mConnectedThread.cancel();
             mConnectedThread = null;
@@ -262,6 +264,7 @@ public class BluetoothChatService {
                             NAME_INSECURE, MY_UUID_INSECURE);
                 }
             } catch (IOException e) {
+                e.printStackTrace();
             }
             mmServerSocket = tmp;
         }
@@ -270,23 +273,28 @@ public class BluetoothChatService {
             setName("AcceptThread" + mSocketType);
 
             BluetoothSocket socket = null;
-
             // Listen to the server socket if we're not connected
             while (mState != STATE_CONNECTED) {
                 try {
                     // This is a blocking call and will only return on a
                     // successful connection or an exception
-                    socket = mmServerSocket.accept();
+                    if (mmServerSocket != null) {
+                        socket = mmServerSocket.accept();
+                        ShadowTalkLog.i("run as server, and mmServerSocket.accept(); called");
+                    }
                 } catch (IOException e) {
+                    e.printStackTrace();
                     break;
                 }
 
                 // If a connection was accepted
+
                 if (socket != null) {
                     synchronized (BluetoothChatService.this) {
                         switch (mState) {
                             case STATE_LISTEN:
                             case STATE_CONNECTING:
+                                ShadowTalkLog.i("mState = " + mState);
                                 // Situation normal. Start the connected thread.
                                 connected(socket, socket.getRemoteDevice(),
                                         mSocketType);
@@ -312,7 +320,7 @@ public class BluetoothChatService {
             try {
                 mmServerSocket.close();
             } catch (IOException e) {
-
+                e.printStackTrace();
             }
         }
     }
@@ -362,11 +370,11 @@ public class BluetoothChatService {
                 // successful connection or an exception
                 mmSocket.connect();
             } catch (IOException e) {
-                // Close the socket
+                ShadowTalkLog.e("IOException happen on ConnectThread mmSocket.connect();");
                 try {
                     mmSocket.close();
                 } catch (IOException e2) {
-
+                    ShadowTalkLog.e("IOException happen on ConnectThread mmSocket.close();");
                 }
                 connectionFailed();
                 return;
@@ -410,7 +418,7 @@ public class BluetoothChatService {
                 tmpIn = socket.getInputStream();
                 tmpOut = socket.getOutputStream();
             } catch (IOException e) {
-
+                ShadowTalkLog.e("IOException happen on ConnectedThread get input and out put stream");
             }
 
             mmInStream = tmpIn;
