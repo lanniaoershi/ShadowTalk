@@ -1,0 +1,6 @@
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/classes/debug
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-748a463f8dcf583db970e1ed9a7febe6999c007b.jar
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/pre-dexed/debug/classes-74d463d887138283607466cc5b69c3d022a56d20.jar
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/pre-dexed/debug/classes-d951eb1f68eb7568064a37e87b708b606ed27cea.jar
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-617101d4b0a7e28877357be28ed752dd080fd109.jar
+/Users/utopia/AndroidStudioProjects/BluetoothChat/Application/build/intermediates/pre-dexed/debug/classes-04436c13ed8c1436c0827257c3e2e2314e704ea5.jar
