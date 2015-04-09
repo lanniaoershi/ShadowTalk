@@ -1,34 +1,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context="com.specialdark.utopia.shadowtalk.ShadowTalkActivity$PlaceholderFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.specialdark.utopia.shadowtalk.ShadowTalkActivity$PlaceholderFragment">
 
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Settings"
-        android:textSize="30sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textSize="30sp" />
 
     <Switch
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bluetooth"
         android:id="@+id/switch_bluetooth"
-        android:padding="10dp"
-        android:textOff="Bluetooth off..."
-        android:textOn="Bluetooth on..."/>
-
-    <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wi-Fi"
+        android:padding="10dp"
+        android:text="Bluetooth" />
+
+    <Switch
         android:id="@+id/switch_wifi"
-        android:padding="10dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Wi-Fi" />
+
+    <Switch
+        android:id="@+id/switch_background_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Receive message on background" />
 </LinearLayout>

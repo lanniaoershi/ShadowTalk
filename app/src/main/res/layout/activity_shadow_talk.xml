@@ -96,7 +96,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_bright">
 
         <ImageButton
             android:id="@+id/btn_friends_page"
@@ -105,7 +106,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_person"/>
 
         <ImageButton
             android:id="@+id/btn_groups_page"
@@ -114,7 +115,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_group"/>
 
         <ImageButton
             android:id="@+id/btn_settings_page"
@@ -123,7 +124,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_settings"/>
     </LinearLayout>
 
 </LinearLayout>

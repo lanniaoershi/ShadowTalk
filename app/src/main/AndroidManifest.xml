@@ -52,10 +52,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".bluetooth.DeviceListActivity"
+            android:name=".bluetooth.BluetoothDeviceListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_device_list"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.specialdark.utopia.shadowtalk.BLUETOOTH_DEVICE_LIST"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ShadowTalkActivity"

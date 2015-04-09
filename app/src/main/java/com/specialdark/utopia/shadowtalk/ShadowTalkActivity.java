@@ -8,11 +8,14 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +30,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.specialdark.utopia.shadowtalk.bluetooth.BluetoothStateChangeReceiver;
+import com.specialdark.utopia.shadowtalk.bluetooth.BluetoothChatService;
+import com.specialdark.utopia.shadowtalk.bluetooth.BluetoothDeviceListActivity;
 import com.specialdark.utopia.shadowtalk.bluetooth.util.GetBondedBluetoothDevices;
 import com.specialdark.utopia.shadowtalk.constant.ShadowTalkConstant;
 import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
@@ -37,6 +41,8 @@ public class ShadowTalkActivity extends Activity {
 
     private ViewPager mViewPager;
     private static BluetoothAdapter mBluetoothAdapter;
+    private static int mState;
+    private BluetoothChatService mChatServiceAtMainActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,10 +61,12 @@ public class ShadowTalkActivity extends Activity {
         ImageButton mFriendsImageButton = (ImageButton) findViewById(R.id.btn_friends_page);
         ImageButton mGroupsImageButton = (ImageButton) findViewById(R.id.btn_groups_page);
         ImageButton mSettingsImageButton = (ImageButton) findViewById(R.id.btn_settings_page);
+        ImageButton mAddFriendImageButton = (ImageButton) findViewById(R.id.add_friends);
 
         mFriendsImageButton.setOnClickListener(new BottomBtnOnClickListener(0));
         mGroupsImageButton.setOnClickListener(new BottomBtnOnClickListener(1));
         mSettingsImageButton.setOnClickListener(new BottomBtnOnClickListener(2));
+        mAddFriendImageButton.setOnClickListener(new AddFriendsBtnOnClickListener());
 
     }
 
@@ -71,8 +79,72 @@ public class ShadowTalkActivity extends Activity {
             Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableIntent, ShadowTalkConstant.REQUEST_ENABLE_BT);
         }
+//        mChatServiceAtMainActivity = new BluetoothChatService(this, mHandlerMainActivity, null);
+//        mChatServiceAtMainActivity.start();
 
     }
+
+    public static int getState() {
+        return mState;
+    }
+
+    public static void setState(int state) {
+        mState = state;
+    }
+
+    public static final Handler mHandlerMainActivity = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            ShadowTalkLog.i("state = "+msg.what);
+            switch (msg.what) {
+                case ShadowTalkConstant.MESSAGE_STATE_CHANGE:
+                    switch (msg.arg1) {
+                        case ShadowTalkConstant.STATE_CONNECTED:
+//                            setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
+//                            mConversationArrayAdapter.clear();
+                            setState(ShadowTalkConstant.STATE_CONNECTED);
+                            break;
+                        case ShadowTalkConstant.STATE_CONNECTING:
+                            setState(ShadowTalkConstant.STATE_CONNECTING);
+//                            setStatus(R.string.title_connecting);
+                            break;
+                        case ShadowTalkConstant.STATE_LISTEN:
+                        case ShadowTalkConstant.STATE_NONE:
+//                            setStatus(R.string.title_not_connected);
+                            setState(ShadowTalkConstant.STATE_NONE);
+                            break;
+                    }
+                    break;
+                case ShadowTalkConstant.MESSAGE_WRITE:
+                    byte[] writeBuf = (byte[]) msg.obj;
+                    // construct a string from the buffer
+//                    String writeMessage = new String(writeBuf);
+//                    mConversationArrayAdapter.add("Me:  " + writeMessage);
+                    break;
+                case ShadowTalkConstant.MESSAGE_READ:
+                    byte[] readBuf = (byte[]) msg.obj;
+                    // construct a string from the valid bytes in the buffer
+//                    String readMessage = new String(readBuf, 0, msg.arg1);
+//                    mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
+                    break;
+                case ShadowTalkConstant.MESSAGE_DEVICE_NAME:
+                    // save the connected device's name
+//                    mConnectedDeviceName = msg.getData().getString(Constants.DEVICE_NAME);
+//                    if (null != activity) {
+//                        Toast.makeText(activity, "Connected to "
+//                                + mConnectedDeviceName, Toast.LENGTH_SHORT).show();
+//                    }
+                    break;
+                case ShadowTalkConstant.MESSAGE_TOAST:
+//                    if (null != activity) {
+//                        Toast.makeText(activity, msg.getData().getString(Constants.TOAST),
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+                    break;
+            }
+        }
+    };
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -88,6 +160,35 @@ public class ShadowTalkActivity extends Activity {
                     Toast.makeText(this, R.string.bt_not_enabled_retry_on_settings, Toast.LENGTH_SHORT).show();
                     // finish();
                 }
+                break;
+            case ShadowTalkConstant.REQUEST_CONNECT_DEVICE_SECURE:
+                if (resultCode == Activity.RESULT_OK) {
+                    String address = data.getExtras()
+                            .getString(BluetoothDeviceListActivity.EXTRA_DEVICE_ADDRESS);
+                    BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
+
+                    device.createBond();
+                    //Use reflect to use hide method cancelPairingUserInput to implement auto pair with random pin code
+//                    try {
+//
+//                        ShadowTalkLog.i("cancelPairingUserInput");
+//                        Method cancelPairingUserInput = BluetoothDevice.class.getMethod("cancelPairingUserInput", (Class[]) null);
+//                        cancelPairingUserInput.invoke(device, (Object[]) null);
+//
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                        ShadowTalkLog.i("catch sth");
+//                    }
+                    //API>19 already provide method createBond so don't need to use reflect to invoke method
+//                    try {
+//                        Method createBond = BluetoothDevice.class.getMethod("createBond", (Class[]) null);
+//                        createBond.invoke(device, (Object[]) null);
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                    device.createBond();
+                }
+                break;
         }
     }
 
@@ -104,6 +205,14 @@ public class ShadowTalkActivity extends Activity {
 
             mViewPager.setCurrentItem(index);
 
+        }
+    }
+
+    public class AddFriendsBtnOnClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(ShadowTalkConstant.ACTION_BLUETOORH_DEVICE_LIST_ACTIVITY);
+            startActivityForResult(intent, ShadowTalkConstant.REQUEST_CONNECT_DEVICE_SECURE);
         }
     }
 
@@ -212,7 +321,7 @@ public class ShadowTalkActivity extends Activity {
                 ImageView friendStatusBmp = (ImageView) convertView.findViewById(R.id.friend_statue);
 
                 friendName.setText(friendsList.get(position));
-                friendConversations.setText("asdasdasdasda");
+                friendConversations.setText("");
                 friendIconBmp.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
                 friendStatusBmp.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
 

@@ -23,6 +23,8 @@ import android.widget.Toast;
 
 import com.specialdark.utopia.shadowtalk.R;
 import com.specialdark.utopia.shadowtalk.ShadowTalkActivity;
+import com.specialdark.utopia.shadowtalk.constant.ShadowTalkConstant;
+import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
 
 
 public class BluetoothChatActivity extends Activity {
@@ -47,6 +49,8 @@ public class BluetoothChatActivity extends Activity {
 
     private String mConnectedDeviceName = null;
 
+    private int mState = ShadowTalkConstant.STATE_NONE;
+
     // Array adapter for the conversation thread
     private ArrayAdapter<String> mConversationArrayAdapter;
 
@@ -58,6 +62,8 @@ public class BluetoothChatActivity extends Activity {
 
     // Member obj for the chat services
     private BluetoothChatService mChatService = null;
+
+    private Intent mIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,14 +106,16 @@ public class BluetoothChatActivity extends Activity {
         // onResume() will be called when ACTION_REQUEST_ENABLE activity returns.
         if (mChatService != null) {
             // Only if the state is STATE_NONE, do we know that we haven't started already
-            if (mChatService.getState() == BluetoothChatService.STATE_NONE) {
+            if (mChatService.getState() == ShadowTalkConstant.STATE_NONE) {
                 // Start the Bluetooth chat services
                 mChatService.start();
             }
         }
+//        if (mState != ShadowTalkConstant.STATE_CONNECTED) {
+            mIntent = getIntent();
+            connectDevice(mIntent, true);
+//        }
 
-//        Intent intent = getIntent();
-//        connectDevice(intent, true);
     }
 
     private void initialChat() {
@@ -135,10 +143,8 @@ public class BluetoothChatActivity extends Activity {
         });
 
         // Initialize the BluetoothChatService to perform bluetooth connections
-        mChatService = new BluetoothChatService(this, mHandler);
+        mChatService = new BluetoothChatService(this, null, mHandler);
 
-        // Initialize the buffer for outgoing messages
-//        mOutStringBuffer = new StringBuffer("");
     }
 
 
@@ -158,8 +164,10 @@ public class BluetoothChatActivity extends Activity {
     public void onDestroy() {
         super.onDestroy();
         // Stop the Bluetooth chat services
-        if (mChatService != null)
+        if (mChatService != null) {
             mChatService.stop();
+            ShadowTalkLog.i("Chat activity call destroy");
+        }
 
     }
 
@@ -181,7 +189,7 @@ public class BluetoothChatActivity extends Activity {
      */
     private void sendChatMessage(String textMessage) {
         // Check that we're actually connected before trying anything
-        if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
+        if (mChatService.getState() != ShadowTalkConstant.STATE_CONNECTED) {
             Toast.makeText(this, R.string.not_connected, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -226,6 +234,7 @@ public class BluetoothChatActivity extends Activity {
         }
     }
 
+
     // The Handler that gets information back from the BluetoothChatService
     private final Handler mHandler = new Handler() {
         @Override
@@ -234,15 +243,16 @@ public class BluetoothChatActivity extends Activity {
                 case MESSAGE_STATE_CHANGE:
 
                     switch (msg.arg1) {
-                        case BluetoothChatService.STATE_CONNECTED:
-                            setStatus(getString(R.string.title_connected_to, mConnectedDeviceName));
+                        case ShadowTalkConstant.STATE_CONNECTED:
+                            setStatus(getString(R.string.title_connected_to)+" "+mConnectedDeviceName);
                             mConversationArrayAdapter.clear();
+                            mState = ShadowTalkConstant.STATE_CONNECTED;
                             break;
-                        case BluetoothChatService.STATE_CONNECTING:
+                        case ShadowTalkConstant.STATE_CONNECTING:
                             setStatus(R.string.title_connecting);
                             break;
-                        case BluetoothChatService.STATE_LISTEN:
-                        case BluetoothChatService.STATE_NONE:
+                        case ShadowTalkConstant.STATE_LISTEN:
+                        case ShadowTalkConstant.STATE_NONE:
                             setStatus(R.string.title_not_connected);
                             break;
                     }
@@ -304,7 +314,7 @@ public class BluetoothChatActivity extends Activity {
     private void connectDevice(Intent data, boolean secure) {
         // Get the device MAC address
         String address = data.getExtras()
-                .getString(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
+                .getString(BluetoothDeviceListActivity.EXTRA_DEVICE_ADDRESS);
         // Get the BluetoothDevice object
         BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
         // Attempt to connect to the device
@@ -314,7 +324,7 @@ public class BluetoothChatActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.option_menu, menu);
+        inflater.inflate(R.menu.menu_buletooth_chat, menu);
         return true;
     }
 
@@ -324,13 +334,14 @@ public class BluetoothChatActivity extends Activity {
         switch (item.getItemId()) {
             case R.id.secure_connect_scan:
                 // Launch the DeviceListActivity to see devices and do scan
-                serverIntent = new Intent(this, DeviceListActivity.class);
+                serverIntent = new Intent(this, BluetoothDeviceListActivity.class);
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
                 return true;
             case R.id.insecure_connect_scan:
                 // Launch the DeviceListActivity to see devices and do scan
-                serverIntent = new Intent(this, DeviceListActivity.class);
-                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
+//                serverIntent = new Intent(this, BluetoothDeviceListActivity.class);
+//                startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
+                connectDevice(mIntent,true);
                 return true;
             case R.id.discoverable:
                 // Ensure this device is discoverable by others
