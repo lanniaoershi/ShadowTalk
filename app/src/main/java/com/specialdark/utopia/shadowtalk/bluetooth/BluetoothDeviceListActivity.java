@@ -20,7 +20,7 @@ import com.specialdark.utopia.shadowtalk.R;
 
 import java.util.Set;
 
-public class DeviceListActivity extends Activity {
+public class BluetoothDeviceListActivity extends Activity {
 
     //need to add a button to settings for user can delete bluetooth paired list.
 
