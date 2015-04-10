@@ -74,8 +74,7 @@ public class MyInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_my_info, container, false);
-        rootView.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_bright));
+        View rootView = inflater.inflate(R.layout.fragment_my_info, container, false);;
         rootView.setAlpha(0.8f);
 
         final TextView current_name = (TextView) rootView.findViewById(R.id.my_current_name);

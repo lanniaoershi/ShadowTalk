@@ -45,6 +45,12 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
     private static BluetoothAdapter mBluetoothAdapter;
     private static int mState;
     private BluetoothChatService mChatServiceAtMainActivity;
+    private ImageButton mFriendsImageButton;
+    private ImageButton mGroupsImageButton;
+    private ImageButton mSettingsImageButton;
+    private ImageView mFriendsFocus;
+    private ImageView mGroupsFocus;
+    private ImageView mSettingsFocus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,17 +66,24 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        ImageButton mFriendsImageButton = (ImageButton) findViewById(R.id.btn_friends_page);
-        ImageButton mGroupsImageButton = (ImageButton) findViewById(R.id.btn_groups_page);
-        ImageButton mSettingsImageButton = (ImageButton) findViewById(R.id.btn_settings_page);
+
+        mFriendsImageButton = (ImageButton) findViewById(R.id.btn_friends_page);
+
+        mGroupsImageButton = (ImageButton) findViewById(R.id.btn_groups_page);
+
+        mSettingsImageButton = (ImageButton) findViewById(R.id.btn_settings_page);
         ImageButton mAddFriendImageButton = (ImageButton) findViewById(R.id.add_friends);
         ImageButton mMyInfoImageButton = (ImageButton) findViewById(R.id.myself_icon);
 
         mFriendsImageButton.setOnClickListener(new BottomBtnOnClickListener(0));
         mGroupsImageButton.setOnClickListener(new BottomBtnOnClickListener(1));
         mSettingsImageButton.setOnClickListener(new BottomBtnOnClickListener(2));
+        mFriendsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
+        mGroupsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
+        mSettingsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
         mAddFriendImageButton.setOnClickListener(new AddFriendsBtnOnClickListener());
         mMyInfoImageButton.setOnClickListener(new MyInfoBtnOnClickListener());
+        setBottomBtnFocusStatus(0);
 
     }
 
@@ -206,18 +219,41 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
 
     }
 
+
+    private void setBottomBtnFocusStatus(int whichBtn) {
+        ShadowTalkLog.i("whichBtn = " +whichBtn);
+        switch (whichBtn) {
+            case 0:
+                mFriendsFocus.setVisibility(View.VISIBLE);
+                mGroupsFocus.setVisibility(View.INVISIBLE);
+                mSettingsFocus.setVisibility(View.INVISIBLE);
+                break;
+            case 1:
+                mFriendsFocus.setVisibility(View.INVISIBLE);
+                mGroupsFocus.setVisibility(View.VISIBLE);
+                mSettingsFocus.setVisibility(View.INVISIBLE);
+                break;
+            case 2:
+                mFriendsFocus.setVisibility(View.INVISIBLE);
+                mGroupsFocus.setVisibility(View.INVISIBLE);
+                mSettingsFocus.setVisibility(View.VISIBLE);
+                break;
+
+        }
+
+    }
+
     public class BottomBtnOnClickListener implements View.OnClickListener {
 
         private int index = 0;
-
         public BottomBtnOnClickListener(int i) {
             index = i;
         }
 
         @Override
         public void onClick(View v) {
-
             mViewPager.setCurrentItem(index);
+            setBottomBtnFocusStatus(index);
 
         }
     }
