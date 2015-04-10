@@ -7,10 +7,12 @@ import java.util.Locale;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v13.app.FragmentPagerAdapter;
@@ -36,7 +38,7 @@ import com.specialdark.utopia.shadowtalk.bluetooth.util.GetBondedBluetoothDevice
 import com.specialdark.utopia.shadowtalk.constant.ShadowTalkConstant;
 import com.specialdark.utopia.shadowtalk.logutil.ShadowTalkLog;
 
-public class ShadowTalkActivity extends Activity {
+public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragment.OnFragmentInteractionListener{
 
 
     private ViewPager mViewPager;
@@ -62,11 +64,13 @@ public class ShadowTalkActivity extends Activity {
         ImageButton mGroupsImageButton = (ImageButton) findViewById(R.id.btn_groups_page);
         ImageButton mSettingsImageButton = (ImageButton) findViewById(R.id.btn_settings_page);
         ImageButton mAddFriendImageButton = (ImageButton) findViewById(R.id.add_friends);
+        ImageButton mMyInfoImageButton = (ImageButton) findViewById(R.id.myself_icon);
 
         mFriendsImageButton.setOnClickListener(new BottomBtnOnClickListener(0));
         mGroupsImageButton.setOnClickListener(new BottomBtnOnClickListener(1));
         mSettingsImageButton.setOnClickListener(new BottomBtnOnClickListener(2));
         mAddFriendImageButton.setOnClickListener(new AddFriendsBtnOnClickListener());
+        mMyInfoImageButton.setOnClickListener(new MyInfoBtnOnClickListener());
 
     }
 
@@ -192,6 +196,16 @@ public class ShadowTalkActivity extends Activity {
         }
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        MyInfoFragment myInfoFragment = MyInfoFragment.newInstance(null,null);
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_replace, myInfoFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
+    }
+
     public class BottomBtnOnClickListener implements View.OnClickListener {
 
         private int index = 0;
@@ -215,6 +229,15 @@ public class ShadowTalkActivity extends Activity {
             startActivityForResult(intent, ShadowTalkConstant.REQUEST_CONNECT_DEVICE_SECURE);
         }
     }
+
+    public class MyInfoBtnOnClickListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            onFragmentInteraction(null);
+        }
+    }
+
 
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {

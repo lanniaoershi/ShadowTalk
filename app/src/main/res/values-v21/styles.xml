@@ -2,4 +2,21 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light">
     </style>
+
+    <style name="BluetoothChatActivityTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/BluetoothChatActionBarTheme</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+
+    </style>
+
+    <style name="BluetoothChatActionBarTheme" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/ActionbarTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/ActionbarTextStyle</item>
+    </style>
+
+    <style name="ActionbarTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
 </resources>

@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.specialdark.utopia.shadowtalk.MyInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true">
+
+
+        <TextView
+            android:id="@+id/my_current_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nick Name"
+            android:gravity="center|top" />
+
+        <EditText
+            android:id="@+id/edit_text_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/my_info_btn_cancel"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/my_info_btn_ok"
+                android:layout_weight="1"
+                android:text="OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
