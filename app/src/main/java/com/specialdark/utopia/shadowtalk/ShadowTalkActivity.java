@@ -22,6 +22,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.CompoundButton;
@@ -79,11 +81,12 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         mGroupsImageButton.setOnClickListener(new BottomBtnOnClickListener(1));
         mSettingsImageButton.setOnClickListener(new BottomBtnOnClickListener(2));
         mFriendsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
-        mGroupsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
-        mSettingsFocus = (ImageView) findViewById(R.id.btn_friends_page_focus);
+        mGroupsFocus = (ImageView) findViewById(R.id.btn_groups_page_focus);
+        mSettingsFocus = (ImageView) findViewById(R.id.btn_settings_page_focus);
         mAddFriendImageButton.setOnClickListener(new AddFriendsBtnOnClickListener());
         mMyInfoImageButton.setOnClickListener(new MyInfoBtnOnClickListener());
-        setBottomBtnFocusStatus(0);
+
+        mViewPager.setOnPageChangeListener(new PagerChangeListener());
 
     }
 
@@ -99,6 +102,20 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
 //        mChatServiceAtMainActivity = new BluetoothChatService(this, mHandlerMainActivity, null);
 //        mChatServiceAtMainActivity.start();
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        ImageView BT_progress_outside = (ImageView) findViewById(R.id.actionbar_BT_status_icon_outside);
+        ImageView BT_progress_inside = (ImageView) findViewById(R.id.actionbar_BT_status_icon_inside);
+        ImageView Wifi_progress_outside = (ImageView) findViewById(R.id.actionbar_wifi_status_icon_outside);
+        ImageView Wifi_progress_inside = (ImageView) findViewById(R.id.actionbar_wifi_status_icon_inside);
+        ImageButton imageButton = (ImageButton) findViewById(R.id.add_friends);
+        setRotate(BT_progress_outside, BT_progress_inside);
+        setRotate(Wifi_progress_outside, Wifi_progress_inside);
+        setRotate(imageButton);
     }
 
     public static int getState() {
@@ -162,6 +179,25 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         }
     };
 
+    public void  setRotate(ImageView progress_view_outside, ImageView progress_view_inside) {
+        Animation outside = new RotateAnimation(0f,360f,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
+        Animation inside = new RotateAnimation(360f,0f,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
+        outside.setRepeatCount(Animation.INFINITE);
+        inside.setRepeatCount(Animation.INFINITE);
+        outside. setDuration(2000);
+        inside. setDuration(2000);
+        progress_view_outside.setAnimation(outside);
+        progress_view_inside.setAnimation(inside);
+        outside.startNow();
+        inside.startNow();
+    }
+    public void setRotate(ImageButton imageButton) {
+        Animation am = new RotateAnimation(0f,360f,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
+        am.setRepeatCount(Animation.INFINITE);
+        am.setDuration(10000);
+        imageButton.setAnimation(am);
+        am.startNow();
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -253,7 +289,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         @Override
         public void onClick(View v) {
             mViewPager.setCurrentItem(index);
-            setBottomBtnFocusStatus(index);
+//            setBottomBtnFocusStatus(index);
 
         }
     }
@@ -274,7 +310,22 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         }
     }
 
+    public class PagerChangeListener implements ViewPager.OnPageChangeListener{
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+            setBottomBtnFocusStatus(position);
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
+        }
+    }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -284,6 +335,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
 
         @Override
         public Fragment getItem(int position) {
+
             switch (position) {
                 case 0:
                     return FriendsFragment.newInstance(position + 1);
@@ -299,6 +351,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
 
         }
 
+
         @Override
         public int getCount() {
             // Show 3 total pages.
@@ -308,6 +361,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         @Override
         public CharSequence getPageTitle(int position) {
             Locale l = Locale.getDefault();
+
             switch (position) {
                 case 0:
                     return getString(R.string.title_section1).toUpperCase(l);
@@ -316,6 +370,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
             }
+            ShadowTalkLog.i("section = "+position);
             return null;
         }
     }
@@ -376,13 +431,9 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
 
                 TextView friendName = (TextView) convertView.findViewById(R.id.friend_name);
                 TextView friendConversations = (TextView) convertView.findViewById(R.id.friend_conversation);
-                ImageView friendIconBmp = (ImageView) convertView.findViewById(R.id.friend_icon);
-                ImageView friendStatusBmp = (ImageView) convertView.findViewById(R.id.friend_statue);
 
                 friendName.setText(friendsList.get(position));
                 friendConversations.setText("");
-                friendIconBmp.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
-                friendStatusBmp.setImageDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
 
                 return convertView;
             }
