@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Binder;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.os.IBinder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -106,7 +108,10 @@ public class MyInfoFragment extends Fragment {
     public void onPause() {
         super.onPause();
         InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),0);
+        if (getActivity().getCurrentFocus() != null && getActivity().getCurrentFocus().getWindowToken() != null) {
+            IBinder ibinder = getActivity().getCurrentFocus().getWindowToken();
+            imm.hideSoftInputFromWindow(ibinder, 0);
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -3,19 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:background="@mipmap/row_friend_background"
-    android:padding="6dp" >
+    android:padding="4dp" >
 
     <ImageView
         android:id="@+id/friend_icon"
         android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:src="@mipmap/ic_launcher"
+        android:layout_height="match_parent"
+        android:src="@mipmap/myself_icon"
         android:layout_weight="1"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_weight="4"
-        android:layout_height="fill_parent">
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/friend_name"
             android:layout_width="fill_parent"
@@ -26,7 +26,7 @@
             android:id="@+id/friend_conversation"
             android:singleLine="true"
             android:ellipsize="marquee"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center_vertical"/>
@@ -35,8 +35,8 @@
     <ImageView
         android:id="@+id/friend_statue"
         android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:src="@mipmap/ic_launcher"
+        android:layout_height="match_parent"
+        android:src="@mipmap/myself_icon"
         android:layout_weight="1"/>
 
 

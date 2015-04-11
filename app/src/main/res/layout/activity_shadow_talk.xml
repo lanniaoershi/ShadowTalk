@@ -1,12 +1,21 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/main_background">
+    android:layout_height="match_parent" >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/main_background"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/translucent_background"/>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
@@ -55,11 +64,18 @@
                             android:text="wifi_status" />
 
                         <ImageView
-                            android:id="@+id/actionbar_wifi_status_icon"
+                            android:id="@+id/actionbar_wifi_status_icon_outside"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@mipmap/progress_outside" />
+
+                        <ImageView
+                            android:id="@+id/actionbar_wifi_status_icon_inside"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/progress_inside" />
 
                     </FrameLayout>
 
@@ -76,12 +92,18 @@
                             android:text="BT_status" />
 
                         <ImageView
-                            android:id="@+id/actionbar_BT_status_icon"
+                            android:id="@+id/actionbar_BT_status_icon_outside"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@mipmap/progress_outside" />
 
+                        <ImageView
+                            android:id="@+id/actionbar_BT_status_icon_inside"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/progress_inside" />
                     </FrameLayout>
 
                 </LinearLayout>
@@ -93,7 +115,9 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@mipmap/searching"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"/>
 
             </LinearLayout>
 
@@ -154,6 +178,7 @@
                         android:scaleType="fitCenter"
                         android:scaleX="0.5"
                         android:scaleY="0.5"
+                        android:visibility="gone"
                         android:src="@mipmap/bottom_btn_focus" />
                 </FrameLayout>
 
@@ -166,7 +191,6 @@
                         android:id="@+id/btn_settings_page"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
                         android:src="@mipmap/bottom_btn" />
@@ -178,6 +202,7 @@
                         android:scaleType="fitCenter"
                         android:scaleX="0.5"
                         android:scaleY="0.5"
+                        android:visibility="gone"
                         android:src="@mipmap/bottom_btn_focus" />
                 </FrameLayout>
             </LinearLayout>
