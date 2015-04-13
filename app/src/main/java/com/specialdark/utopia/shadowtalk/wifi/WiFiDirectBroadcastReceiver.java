@@ -40,7 +40,7 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver{
                 mWiFiDirectActivity.setIsWifiP2pEnable(true);
             } else {
                 // Wifi P2P is disabled
-                mWiFiDirectActivity.setIsWifiP2pEnable(true);
+                mWiFiDirectActivity.setIsWifiP2pEnable(false);
                 mWiFiDirectActivity.resetDate();
             }
         } else if (WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION.equals(action)) {

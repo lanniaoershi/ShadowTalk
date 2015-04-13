@@ -4,19 +4,18 @@ import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.net.Uri;
-import android.os.Binder;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.os.IBinder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+
 
 
 /**
@@ -33,13 +32,16 @@ public class MyInfoFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private static final BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-    private Animation mAnimation;
+    private static  boolean mIsFragmentShowing = false;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private static MyInfoFragment mFragment;
 
     /**
      * Use this factory method to create a new instance of
@@ -51,16 +53,24 @@ public class MyInfoFragment extends Fragment {
      */
     // TODO: Rename and change types and number of parameters
     public static MyInfoFragment newInstance(String param1, String param2) {
-        MyInfoFragment fragment = new MyInfoFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+
+        if (mFragment != null) {
+            return mFragment;
+        } else {
+            mFragment = new MyInfoFragment();
+            Bundle args = new Bundle();
+            args.putString(ARG_PARAM1, param1);
+            args.putString(ARG_PARAM2, param2);
+            mFragment.setArguments(args);
+            return mFragment;
+        }
     }
 
     public MyInfoFragment() {
         // Required empty public constructor
+    }
+    public static boolean isFragmentShowing() {
+        return mIsFragmentShowing;
     }
 
     @Override
@@ -76,13 +86,17 @@ public class MyInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_my_info, container, false);;
-        rootView.setAlpha(0.8f);
+        View rootView = inflater.inflate(R.layout.fragment_my_info, container, false);
+        mIsFragmentShowing = true;
 
         final TextView current_name = (TextView) rootView.findViewById(R.id.my_current_name);
         final EditText newName = (EditText) rootView.findViewById(R.id.edit_text_nick_name);
         final Button cancel = (Button) rootView.findViewById(R.id.my_info_btn_cancel);
         final Button ok = (Button) rootView.findViewById(R.id.my_info_btn_ok);
+
+        newName.requestFocus();
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.showSoftInput(rootView,0);
 
         current_name.setText("Nick Name: " + mBluetoothAdapter.getName());
         cancel.setOnClickListener(new View.OnClickListener() {
@@ -91,7 +105,6 @@ public class MyInfoFragment extends Fragment {
                 getFragmentManager().popBackStack();
             }
         });
-
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,6 +125,12 @@ public class MyInfoFragment extends Fragment {
             IBinder ibinder = getActivity().getCurrentFocus().getWindowToken();
             imm.hideSoftInputFromWindow(ibinder, 0);
         }
+    }
+
+    @Override
+    public void onStop() {
+        mIsFragmentShowing = false;
+        super.onStop();
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -150,7 +169,7 @@ public class MyInfoFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        void onFragmentInteraction(Uri uri);
     }
 
 }

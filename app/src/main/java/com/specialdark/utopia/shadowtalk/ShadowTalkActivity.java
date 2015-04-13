@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.Settings;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -53,6 +54,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
     private ImageView mFriendsFocus;
     private ImageView mGroupsFocus;
     private ImageView mSettingsFocus;
+    private MyInfoFragment mMyInfoFragment ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +89,7 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         mMyInfoImageButton.setOnClickListener(new MyInfoBtnOnClickListener());
 
         mViewPager.setOnPageChangeListener(new PagerChangeListener());
+        mMyInfoFragment = MyInfoFragment.newInstance(null,null);
 
     }
 
@@ -220,7 +223,8 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
                             .getString(BluetoothDeviceListActivity.EXTRA_DEVICE_ADDRESS);
                     BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
 
-                    device.createBond();
+//                    device.createBond();
+//                    startActivity(new Intent(Settings.ACTION_BLUETOOTH_SETTINGS));
                     //Use reflect to use hide method cancelPairingUserInput to implement auto pair with random pin code
 //                    try {
 //
@@ -246,18 +250,26 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
     }
 
     @Override
+    public void onBackPressed() {
+        if (MyInfoFragment.isFragmentShowing()) {
+            getFragmentManager().popBackStack();
+        } else
+            super.onBackPressed();
+    }
+
+    @Override
     public void onFragmentInteraction(Uri uri) {
-        MyInfoFragment myInfoFragment = MyInfoFragment.newInstance(null,null);
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_replace, myInfoFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+        if (!MyInfoFragment.isFragmentShowing()) {
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_replace, mMyInfoFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
 
     }
 
 
     private void setBottomBtnFocusStatus(int whichBtn) {
-        ShadowTalkLog.i("whichBtn = " +whichBtn);
         switch (whichBtn) {
             case 0:
                 mFriendsFocus.setVisibility(View.VISIBLE);
@@ -289,7 +301,6 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
         @Override
         public void onClick(View v) {
             mViewPager.setCurrentItem(index);
-//            setBottomBtnFocusStatus(index);
 
         }
     }
@@ -297,8 +308,9 @@ public class ShadowTalkActivity extends FragmentActivity implements MyInfoFragme
     public class AddFriendsBtnOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(ShadowTalkConstant.ACTION_BLUETOORH_DEVICE_LIST_ACTIVITY);
-            startActivityForResult(intent, ShadowTalkConstant.REQUEST_CONNECT_DEVICE_SECURE);
+            startActivity(new Intent(Settings.ACTION_BLUETOOTH_SETTINGS));
+//            Intent intent = new Intent(ShadowTalkConstant.ACTION_BLUETOOTH_DEVICE_LIST_ACTIVITY);
+//            startActivityForResult(intent, ShadowTalkConstant.REQUEST_CONNECT_DEVICE_SECURE);
         }
     }
 

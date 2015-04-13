@@ -7,7 +7,7 @@ public class ShadowTalkConstant {
 
     //Intent action
     public static final String ACTION_BLUETOOTH_CHAT_ACTIVITY = "com.specialdark.utopia.shadowtalk.BLUETOOTH_CHAT";
-    public static final String ACTION_BLUETOORH_DEVICE_LIST_ACTIVITY = "com.specialdark.utopia.shadowtalk.BLUETOOTH_DEVICE_LIST";
+    public static final String ACTION_BLUETOOTH_DEVICE_LIST_ACTIVITY = "com.specialdark.utopia.shadowtalk.BLUETOOTH_DEVICE_LIST";
 
 
     //Request code

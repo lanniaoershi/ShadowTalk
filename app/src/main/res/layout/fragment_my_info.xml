@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:padding="30dp"
         android:background="#ff000000"
+        android:alpha="0.9"
         android:layout_gravity="center"
         android:animateLayoutChanges="true">
 
@@ -20,14 +21,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nick Name"
-            android:gravity="center|top" />
+            android:gravity="center|top"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edit_text_nick_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:textColor="@android:color/holo_blue_light"/>
+            android:textColor="@android:color/holo_blue_light" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,17 +44,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scaleX="0.8"
-                android:scaleY="0.8"/>
+                android:textColor="@android:color/holo_blue_bright"
+                android:scaleY="0.8" />
 
             <Button
                 android:id="@+id/my_info_btn_ok"
                 android:layout_weight="1"
                 android:text="OK"
+                android:textColor="@android:color/holo_blue_bright"
                 android:background="@drawable/fragment_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scaleX="0.8"
-                android:scaleY="0.8"/>
+                android:scaleY="0.8" />
         </LinearLayout>
     </LinearLayout>
 
